@@ -7,7 +7,7 @@
 # Distributed under terms of the MIT license.
 
 """
-leetcode189 O(1) extra space
+leetcode 189 O(1) extra space
 """
 
 
@@ -42,8 +42,17 @@ class Solution:
             return b
         return self.gcd(b, a % b)
 
+
 if __name__ == "__main__":
     s = Solution()
-    s.rotate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 8)
-    s.rotate([1, 2, 3, 4, 5, 6, 7], 3)
-    s.rotate([1], 3)
+    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    s.rotate(nums, 8)
+    print nums
+
+    nums = [1, 2, 3, 4, 5, 6, 7]
+    s.rotate(nums, 3)
+    print nums
+
+    nums = [1]
+    s.rotate(nums, 3)
+    print nums
