@@ -9,7 +9,7 @@
 """
 """
 
-
+# todo dp有待尝试
 def char_match(c, pc):
     if pc == ".":
         return True
@@ -18,10 +18,16 @@ def char_match(c, pc):
     return False
 
 
-def find_next_non_star_pattern_char_index(p, p_i):
-    while p_i < len(p) and p[p_i] == '*':
-        p_i += 1
-    return p_i
+def prepare_p(p):
+    i = 0
+    while i < len(p) - 1:
+        if p[i] == p[i + 1] == "*":
+            p = p[:i] + p[i + 1:]
+            continue
+        i += 1
+    if len(p) > 0 and p[0] == "*":
+        p = p[1:]
+    return p
 
 
 class Solution:
@@ -31,43 +37,40 @@ class Solution:
         :type p: str
         :rtype: bool
         """
+        self.memo = {}
+        return self.do_match(s, prepare_p(p))
+
+    def do_match(self, s, p):
+        if (s, p) in self.memo.keys():
+            return self.memo[(s, p)]
+        # print(s, p)
         p_i = 0
-        # 找到第一个非*模式字符
-        p_i = find_next_non_star_pattern_char_index(p, p_i)
 
         s_i = 0
-        result = True
-        if len(p) == 0:
-            return len(s) == 0
-        if len(s) == 0:
-            return p_i == len(p)
-        while p_i < len(p) or s_i < len(s):
-            if p_i>=len(p):
+        len_p = len(p)
+        len_s = len(s)
+        # 模式串已空，看字符串空不
+        if len_p == p_i:
+            return len_s == 0
+        # 字符串已空，看模式串空不
+        if len_s == 0:
+            if len_p - p_i == 1:
                 return False
-            if p[p_i] == '*':
-                recursion_result = False
-                next_non_start_index = find_next_non_star_pattern_char_index(p, p_i)
-                # print("next_non_start_index:", next_non_start_index)
-                while s_i <= len(s):
-                    recursion_result |= self.isMatch(s[s_i:], p[next_non_start_index:])
-                    if recursion_result:
-                        # print("break at recursion_result; s_i:", s_i)
-                        break
-                    if s_i < len(s) and not char_match(s[s_i], p[p_i - 1]):
-                        # print("break at not match *; s_i:", s_i)
-                        break
-                    s_i += 1
-                return recursion_result
-            # print(s, p, s_i, p_i)
-            if s_i >= len(s):
+            if len_p - p_i == 0:
+                return True
+            if len_p - p_i >= 2:
+                if p[p_i + 1] == '*':
+                    return self.do_match(s, p[p_i + 2:])
                 return False
-            if result and char_match(s[s_i], p[p_i]):
-                s_i += 1
-                p_i += 1
-                continue
-            else:
-                return False
-        return result
+
+        if p_i < len_p - 1:
+            if p[p_i + 1] == '*':
+                re = self.do_match(s, p[p_i] + p) or self.do_match(s, p[p_i + 2:])
+                self.memo[(s, p)] = re
+                return re
+        re = char_match(s[s_i], p[p_i]) and self.do_match(s[s_i + 1:], p[p_i + 1:])
+        self.memo[(s, p)] = re
+        return re
 
 
 if __name__ == "__main__":
@@ -84,17 +87,22 @@ if __name__ == "__main__":
         [("", "e"), False],
         [("", "*"), True],
         [("", ""), True],
+        [("", ".*"), True],
+        [("", ".***"), True],
         [("a", ""), False],
         [("aaabcaa", "a.*e"), False],
         [("aaabcaa", "a*.*e"), False],
         [("aaabcaa", "a*.*"), True],
-        [("a", "a*.*"), False],
+        [("a", "a*.*"), True],
         [("ab", "a*.*"), True],
         [("abc", "a*.****"), True],
-        [("abc", ".a*.****"), False],
+        [("abc", ".a*.****"), True],
         [("abbbbb", "a*.*"), True],
+        [("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c"), False],
     ]
     for i in data:
-        r=s.isMatch(*i[0]) == i[1]
+        print("----")
+        print(i[0][1], prepare_p(i[0][1]))
+        r = s.isMatch(*i[0]) == i[1]
         if not r:
             print(i[0])
