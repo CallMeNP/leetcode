@@ -37,9 +37,12 @@ class Solution:
         :type p: str
         :rtype: bool
         """
+        self.memo = {}
         return self.do_match(s, prepare_p(p))
 
     def do_match(self, s, p):
+        if (s, p) in self.memo.keys():
+            return self.memo[(s, p)]
         # print(s, p)
         p_i = 0
 
@@ -57,23 +60,17 @@ class Solution:
                 return True
             if len_p - p_i >= 2:
                 if p[p_i + 1] == '*':
-                    return self.isMatch(s, p[p_i + 2:])
+                    return self.do_match(s, p[p_i + 2:])
                 return False
 
         if p_i < len_p - 1:
             if p[p_i + 1] == '*':
-                re_result = False
-                s_ii = s_i
-                while s_ii <= len_s:
-                    re_result |= self.do_match(s[s_ii:], p[p_i + 2:])
-                    if re_result:
-                        break
-                    if s_ii < len_s and not char_match(s[s_ii], p[p_i]):
-                        break
-                    s_ii += 1
-                    # return self.do_match(s, p[p_i] + p) or )
-                return re_result
-        return char_match(s[s_i], p[p_i]) and self.do_match(s[s_i + 1:], p[p_i + 1:])
+                re = self.do_match(s, p[p_i] + p) or self.do_match(s, p[p_i + 2:])
+                self.memo[(s, p)] = re
+                return re
+        re = char_match(s[s_i], p[p_i]) and self.do_match(s[s_i + 1:], p[p_i + 1:])
+        self.memo[(s, p)] = re
+        return re
 
 
 if __name__ == "__main__":
