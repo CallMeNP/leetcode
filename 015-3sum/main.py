@@ -77,9 +77,9 @@ if __name__ == "__main__":
     import operator
 
     s = Solution()
-    import data
+    from data import data
 
-    for d in data.data:
+    for d in data:
         answer = s.threeSum(d[0])
         if operator.ne(answer, sorted(d[1])):
             print(answer)
