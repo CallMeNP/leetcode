@@ -19,10 +19,9 @@ class Solution:
         """
         if len(strs) == 0:
             return ""
-        common = ""
         i = 0
-        while True:
-            is_common = True
+        is_common = True
+        while is_common:
             for str in strs:
                 if i >= len(str):
                     is_common = False
@@ -30,18 +29,17 @@ class Solution:
                 if str[i] != strs[0][i]:
                     is_common = False
                     break
-            if is_common:
-                common += str[i]
-                i += 1
-            else:
+            if not is_common:
                 break
-        return common
+            i += 1
+        return str[:i]
 
 
 if __name__ == "__main__":
     s = Solution()
     data = [
         [["abc", "a", "ab"], "a"],
+        [["abc", "abc", "abc"], "abc"],
         [["abc", "a", "ab", ""], ""],
         [["dog", "racecar", "car"], ""],
         [[], ""],
@@ -50,6 +48,6 @@ if __name__ == "__main__":
     for d in data:
         answer = s.longestCommonPrefix(d[0])
         if answer != d[1]:
-            print(d)
+            print(d, answer)
         else:
             print(True)
