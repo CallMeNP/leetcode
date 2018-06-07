@@ -7,28 +7,27 @@
 # Distributed under terms of the MIT license.
 
 """
-使用生成器的版本
+使用公共变量的版本
 """
 
 
 class Solution:
     def doit(self, unclosed, n, s):
         if unclosed > 0:
-            for i in self.doit(unclosed - 1, n, s + ")"):
-                yield i
+            self.doit(unclosed - 1, n, s + ")")
         if n > 0:
-            for i in self.doit(unclosed + 1, n - 1, s + "("):
-                yield i
+            self.doit(unclosed + 1, n - 1, s + "(")
         if unclosed == 0 and n == 0:
-            yield s
+            self.answer.append(s)
 
     def generateParenthesis(self, n):
         """
         :type n: int
         :rtype: List[str]
         """
-        answer = [i for i in self.doit(0, n, "")]
-        return sorted(answer)
+        self.answer = []
+        self.doit(0, n, "")
+        return sorted(self.answer)
 
 
 if __name__ == "__main__":
