@@ -20,22 +20,25 @@ class Solution:
         """
         longer = nums1
         shorter = nums2
-        if len(nums1) < len(nums2):
-            longer, shorter = nums2, nums1
         len_longer = len(longer)
         len_shorter = len(shorter)
+        if len_longer < len_shorter:
+            longer, shorter, len_longer, len_shorter = nums2, nums1, len_shorter, len_longer
         len_of_sum = len_longer + len_shorter
         is_odd = len_of_sum % 2  # type: int # 总元素数是否为奇数
         len_of_left = len_of_sum >> 1  # 应位于中位数左侧的元素个数
+
+        # 长数组为空，短必然空，无定义
         if len_longer == 0:
             raise Exception("undefined")
+        # 短为空，直接O(1)返回
         if len_shorter == 0:
             if is_odd:
-                return longer[(len_longer >> 1)]
-            return (longer[len_longer >> 1] + longer[(len_longer >> 1) - 1]) / 2
+                return longer[len_of_left]
+            return (longer[len_of_left] + longer[len_of_left - 1]) / 2
+
         low = 0  # type:int # 短数组的下标下界
         high = len_shorter  # type:int # 短数组的下标上界
-
         while low <= high:
             sr = low + ((high - low) >> 1)  # type: int # shorter中，切分线右侧的元素下标
             sl = sr - 1  # type: int # shorter中，切分线左侧的元素下标
@@ -52,6 +55,7 @@ class Solution:
                     continue
             break
 
+        # ll sl 不会同时<0
         if ll < 0:
             max_left = shorter[sl]
         elif sl < 0:
@@ -59,6 +63,7 @@ class Solution:
         else:
             max_left = max(longer[ll], shorter[sl])
 
+        # lr sr 不会同时>len
         if lr >= len_longer:
             min_right = shorter[sr]
         elif sr >= len_shorter:
@@ -73,7 +78,7 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    d = [
+    data = [
         [[1], [0], 0.5],
         [[1], [2], 1.5],
         [[1, 2], [2, 3], 2.0],
@@ -89,12 +94,9 @@ if __name__ == '__main__':
         [[3, 4], [1, 2], 2.5],
         [[1, 5, 6, 8], [2, 3, 4, 7], 4.5]
     ]
-    for i in range(len(d)):
-        try:
-            answer = s.findMedianSortedArrays(d[i][0], d[i][1])
-            if answer == d[i][2]:
-                print(True)
-                continue
-            print(d[i][0], d[i][1], answer, answer == d[i][2], "\n")
-        except Exception as e:
-            print(e)
+    for d in data:
+        answer = s.findMedianSortedArrays(d[0], d[1])
+        if answer == d[2]:
+            print(True)
+        else:
+            print(d[0], d[1], answer, answer == d[2], "\n")

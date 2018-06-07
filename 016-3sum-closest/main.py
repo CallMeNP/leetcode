@@ -17,21 +17,23 @@ class Solution:
         r = len(nums) - 1
         if len(nums) < 2:
             return 0
-        last_sum = 0
-        sum = 0
+        closet = 0
+        min_diff = math.inf
         while l < r:
             sum = nums[l] + nums[r]
             if sum == target:
                 return sum
+
+            diff = abs(target - sum)
+            if diff < min_diff:
+                min_diff = diff
+                closet = sum
+
             if sum < target:
                 l += 1
             else:
                 r -= 1
-            last_sum = sum
-        if abs(last_sum - target) < abs(sum):
-            print("pay attention")
-            return last_sum
-        return sum
+        return closet
 
     def threeSumClosest(self, nums, target):
         """
@@ -39,16 +41,22 @@ class Solution:
         :type target: int
         :rtype: int
         """
+        min_diff = math.inf
         closet = math.inf
         nums = sorted(nums)
-        x = len(nums)
+        x = len(nums) - 1
         while 1 < x:
-            x -= 1
             closet_2 = self.twoSumCloset(nums[:x], target - nums[x])
-            diff = nums[x] + closet_2 - target
-            if diff == 0:
-                return diff
-            closet = max(closet, diff)
+            sum = nums[x] + closet_2
+            if sum == target:
+                return sum
+
+            diff = abs(nums[x] + closet_2 - target)
+            if diff < min_diff:
+                min_diff = diff
+                closet = sum
+
+            x -= 1
         return closet
 
 
@@ -58,6 +66,7 @@ if __name__ == "__main__":
 
     data = [
         [[-1, 2, 1, -4], 1, 2],
+        [[-3, 0, 1, 2], 1, 0],
         [[0, 0, 0, 0], 1, 0],
     ]
 
@@ -65,5 +74,6 @@ if __name__ == "__main__":
         answer = s.threeSumClosest(d[0], d[1])
         if answer != d[2]:
             print(answer, d[2])
+            print("----")
         else:
             print(True)
