@@ -35,13 +35,13 @@ class Solution:
 if __name__ == "__main__":
     s = Solution()
     nums = [0]
-    print s.removeDuplicates(nums), nums
+    print(s.removeDuplicates(nums), nums)
 
     nums = [0, 0, 1]
-    print s.removeDuplicates(nums), nums
+    print(s.removeDuplicates(nums), nums)
 
     nums = [1, 2, 3]
-    print s.removeDuplicates(nums), nums
+    print(s.removeDuplicates(nums), nums)
 
     nums = []
-    print s.removeDuplicates(nums), nums
+    print(s.removeDuplicates(nums), nums)
