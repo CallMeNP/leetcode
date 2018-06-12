@@ -18,22 +18,20 @@ class Solution:
         :rtype: int
         """
         max_valid_len = 0
+        # stack = [-1]
         stack = []
-        # s = ")" + s
-        left = -1
+        s = ")" + s
         for i in range(len(s)):
             if s[i] == "(":
                 stack.append(i)
                 # count+=1
             elif s[i] == ")":
-                if not stack:
-                    left = i
                 if stack:
                     stack.pop()
-                    if not stack:
-                        current_len = i - left
-                    else:
-                        current_len = i - stack[-1]
+                if not stack:
+                    stack.append(i)
+                else:
+                    current_len = i - stack[-1]
                     max_valid_len = max(current_len, max_valid_len)
         return max_valid_len
 
