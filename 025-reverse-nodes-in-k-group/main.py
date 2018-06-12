@@ -65,15 +65,15 @@ class Solution:
         head.next = i
         return pre
 
-    def swapPairs(self, head):
+    def reverseKGroup(self, head, k):
         """
         :type head: ListNode
+        :type k: int
         :rtype: ListNode
         """
         guard = ListNode(0)
         guard.next = head
         pre = guard
-        k = 2
         while True:
             l = pre.next
             count = 1
@@ -91,18 +91,24 @@ class Solution:
 if __name__ == "__main__":
     s = Solution()
     data = [
-        [[1, 2, 3, 4, 5], [2, 1, 4, 3, 5]],
-        [[1, 2, 3, 4], [2, 1, 4, 3]],
-        [[1, 2, 4], [2, 1, 4]],
-        [[1, 2], [2, 1]],
-        [[1], [1]],
-        [[], []],
+        [[1, 2, 3, 4, 5], 2, [2, 1, 4, 3, 5]],
+        [[1, 2, 3, 4], 2, [2, 1, 4, 3]],
+        [[1, 2, 4], 2, [2, 1, 4]],
+        [[1, 2], 2, [2, 1]],
+        [[1], 2, [1]],
+        [[], 2, []],
+        [[1, 2, 3, 4, 5], 3, [3, 2, 1, 4, 5]],
+        [[1, 2, 3, 4], 3, [3, 2, 1, 4]],
+        [[1, 2, 4], 3, [4, 2, 1]],
+        [[1, 2], 3, [1, 2]],
+        [[1], 3, [1]],
+        [[], 3, []],
     ]
     for d in data:
         nodes = list2nodes(d[0])
-        answer = s.swapPairs(nodes)
+        answer = s.reverseKGroup(nodes, d[1])
         list_answer = nodes2list(answer)
-        if list_answer == d[1]:
+        if list_answer == d[2]:
             print(True)
         else:
             print(d, list_answer)
