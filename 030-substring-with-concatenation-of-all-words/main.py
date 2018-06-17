@@ -8,9 +8,34 @@
 
 """
 """
+import re
 
 
 class Solution:
+    def check(self, substring):
+        """
+        :type substring: str
+        :rtype: bool
+        """
+        sub_list = re.findall('.{%s}' % self.word_len, substring)
+        sub_dict = self.gen_dict(sub_list)
+        if sub_dict == self.word_dic:
+            return True
+        return False
+
+    @staticmethod
+    def gen_dict(word_list):
+        """
+        :type word_list: List[str
+        :rtype: dict
+        """
+        # word_dic = dict()
+        word_dic = dict.fromkeys(word_list, 0)
+        # print(word_dic)
+        for w in word_list:
+            word_dic[w] += 1
+        return word_dic
+
     def findSubstring(self, s, words):
         """
         :type s: str
@@ -19,42 +44,14 @@ class Solution:
         """
         if len(words) == 0:
             return []
-        word_len = len(words[0])
-        finded = []
+        self.word_len = len(words[0])
+        self.word_num = len(words)
+        self.word_dic = self.gen_dict(words)
         res = []
-        for w_i in range(len(words)):
-            finded.append([])
-            i = -1
-            while True:
-                i = s.find(words[w_i], i + 1)
-                if i == -1:
-                    break
-                finded[w_i].append(i)
-        # 存在部分单词没找到
-        if len(finded) < len(words):
-            return []
-
-        while True:
-            finded.sort()
-            this_round = True
-            # 单词1位置列表为空
-            if len(finded[0]) == 0:
-                return res
-            f_i = 1
-            while f_i < len(finded):
-                # 某单词的位置列表为空
-                if len(finded[f_i]) == 0:
-                    return res
-                if finded[f_i][0] == finded[f_i - 1][0] + word_len:
-                    f_i += 1
-                    continue
-                this_round = False
-                for f_j in range(0, f_i):
-                    del finded[f_j][0]
-                break
-            if this_round:
-                res.append(finded[0][0])
-                del finded[0][0]
+        for i in range(len(s) - (self.word_len * self.word_num) + 1):
+            if self.check(s[i:(self.word_len * self.word_num + i)]):
+                res.append(i)
+        return res
 
 
 if __name__ == '__main__':
@@ -69,7 +66,8 @@ if __name__ == '__main__':
         [("", ["bar"]), []],
         [("barfoofoobarthefoobarman", ["bar", "foo", "the"]), [6, 9, 12]],
         [("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo", "barr", "wing", "ding", "wing"]), [13]],
-        [("lingmindraboofooowingdingbarrwingokokmonkeypoundcake", ["fooo", "barr", "wing", "ding", "wing","okok"]), [13]]
+        [("lingmindraboofooowingdingbarrwingokokmonkeypoundcake", ["fooo", "barr", "wing", "ding", "wing", "okok"]),
+         [13]]
     ]
     for d in data:
         answer = s.findSubstring(*d[0])
