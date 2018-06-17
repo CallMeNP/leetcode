@@ -35,12 +35,12 @@ if __name__ == "__main__":
     s = Solution()
     nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     s.rotate(nums, 8)
-    print nums
+    print(nums)
 
     nums = [1, 2, 3, 4, 5, 6, 7]
     s.rotate(nums, 3)
-    print nums
+    print(nums)
 
     nums = [1]
     s.rotate(nums, 3)
-    print nums
+    print(nums)
