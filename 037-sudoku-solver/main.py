@@ -10,41 +10,48 @@
 
 """
 
+from mod.dfs import DFSTree
+
 
 class Grid:
     def __init__(self, prob):
         """
-        :param prob: set[int]
+        :param prob: set
         """
-        self.prob = prob  # type:set
+        self.prob = prob
         self.chosen_by_same_row = set()
         self.chosen_by_same_col = set()
         self.chosen_by_same_9grids = set()
         self.tested = set()
-        self.chosen = "."
+        self.chosen = None
 
     def new_chosen(self):
-        self.tested.add(self.chosen)
-        if self.prob:
+        if self.chosen:
+            self.tested.add(self.chosen)
+        if self.has_more_prob():
             self.chosen = self.prob.pop()
-        else:
-            self.chosen = "."
-            print("Grid(%d,%d) has no more choice" % (self.x, self.y))
-        return self.chosen
+            return self.chosen
+        raise Exception("no more choice")
+
+    def clear_tested(self):
+        if self.chosen:
+            self.prob.add(self.chosen)
+            self.chosen = None
+        self.prob |= self.tested
+        self.tested.clear()
+
+    def has_more_prob(self):
+        return len(self.prob) > 0
 
     def prob_count(self):
-        if self.chosen == '.':
+        if not self.chosen:
             return len(self.prob)
         return len(self.prob) + 1
 
     def __str__(self):
-        return "(%d,%d),%s" % (self.x, self.y, str(self.prob))
+        return "(%d,%d),%s,%s" % (self.x, self.y, self.chosen, str(self.prob))
 
     def __cmp__(self, other):
-        """
-        :param other: Grid
-        :return:
-        """
         return self.prob_count() - other.prob_count()
 
     def __lt__(self, other):
@@ -54,68 +61,114 @@ class Grid:
         return self.prob_count() > other.prob_count()
 
 
-class Solution:
+class Solution(DFSTree):
     def __init__(self):
+        DFSTree.__init__(self)
         self.PROB_SET = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
         self.board = []
+        # 通过坐标将不确定的格子索引起来
         self.multi_prob_grids_dict = dict()  # type:{tuple:Grid}
+        # 将不确定的格子放在 list 里，方便排序
         self.multi_prob_grids = []
+        # 做出选择的格子组成的栈，用于回溯选择
         self.action_history = []
 
+    def is_target(self):
+        if self.multi_prob_grids:
+            self.multi_prob_grids.sort()
+            if self.multi_prob_grids[0].prob_count() != 1:
+                return False
+            if self.multi_prob_grids[-1].prob_count() != 1:
+                return False
+        # todo 通过已填入的数验证
+        return True
+
+    def found(self):
+        for g in self.action_history:
+            self.board[g.y][g.x] = g.chosen
+        for g in self.multi_prob_grids:
+            self.board[g.y][g.x] = g.prob.pop()
+            # print(self.board)
+
+    def go_on(self):
+        return False
+
+    def has_children(self):
+        # 已经找到解，无子状态
+        if self.is_target():
+            return False
+        # 没有更多待选格子，无子状态
+        if not self.multi_prob_grids:
+            return False
+        # 存在待选格子没有可选项，说明发生了矛盾，无子状态
+        self.multi_prob_grids.sort()
+        if self.multi_prob_grids[0].prob_count() == 0:
+            return False
+        return True
+
+    def visit_first_child(self):
+        self.multi_prob_grids.sort()
+        g = self.multi_prob_grids.pop(0)
+        g.new_chosen()
+        self.action_history.append(g)
+        self.process_same_row_col_9grids(g)
+
+    def has_next_sibling(self):
+        # 没有已作出选择的格子了，回溯到尽头了
+        if not self.action_history:
+            return False
+        # 最后一个已做选择的格子，还有其他选项
+        g = self.action_history[-1]  # type: Grid
+        return g.has_more_prob()
+
+    def visit_next_sibling(self):
+        g = self.action_history[-1]
+        self.revert_same_row_col_9grids(g)
+        g.new_chosen()
+        self.process_same_row_col_9grids(g)
+
+    def has_parent(self):
+        return bool(self.action_history)
+
+    def back_to_parent(self):
+        g = self.action_history.pop()  # type: Grid
+        self.revert_same_row_col_9grids(g)
+        g.clear_tested()
+        self.multi_prob_grids.append(g)
+
     def clear_prob_set_by_board(self):
-        for g in self.multi_prob_grids_dict:
-            s = self.multi_prob_grids_dict[g].prob  # type:set
-            s -= self.get_9grid_set(*g)
-            s -= self.get_col_set(g[0])
-            s -= self.get_row_set(g[1])
+        for g in self.multi_prob_grids:
+            g.prob -= set([row[g.x] for row in self.board])
+            g.prob -= set(self.board[g.y])
+            x = g.x // 3 * 3
+            y = g.y // 3 * 3
+            g.prob -= set([self.board[y + dy][x + dx] for dx in range(3) for dy in range(3)])
 
-    def get_row_set(self, y):
-        if not 0 <= y < 9:
-            raise Exception("bad y")
-        s = set(self.board[y])
-        if "." in s:
-            s.remove(".")
-        return s
-
-    def get_col_set(self, x):
-        if not 0 <= x < 9:
-            raise Exception("bad x")
-        s = set([self.board[i][x] for i in range(9)])
-        if "." in s:
-            s.remove(".")
-        return s
-
-    def get_9grid_set(self, x, y):
-        if not 0 <= y < 9:
-            raise Exception("bad y")
-        if not 0 <= x < 9:
-            raise Exception("bad x")
-        x = x // 3 * 3
-        y = y // 3 * 3
-        s = set([self.board[y + dy][x + dx] for dx in range(3) for dy in range(3)])
-        if "." in s:
-            s.remove(".")
-        return s
-
-    def process_same_row(self, x, y, choice):
+    def process_same_row_col_9grids(self, grid):
+        x = grid.x
+        y = grid.y
+        choice = grid.chosen
+        # same row
         for i in range(9):
             if i == x:
+                continue
+            if (i, y) not in self.multi_prob_grids_dict:
                 continue
             g = self.multi_prob_grids_dict[(i, y)]  # type:Grid
             if choice in g.prob:
                 g.prob.remove(choice)
                 g.chosen_by_same_row.add(choice)
-
-    def process_same_col(self, x, y, choice):
+        # same col
         for i in range(9):
             if i == y:
+                continue
+            if (x, i) not in self.multi_prob_grids_dict:
                 continue
             g = self.multi_prob_grids_dict[(x, i)]  # type:Grid
             if choice in g.prob:
                 g.prob.remove(choice)
                 g.chosen_by_same_col.add(choice)
-
-    def process_same_9grids(self, x, y, choice):
+        # same 9 grids
         if not 0 <= y < 9:
             raise Exception("bad y")
         if not 0 <= x < 9:
@@ -124,31 +177,39 @@ class Solution:
         y_ = y // 3 * 3
         for i in [(x_ + dx, y_ + dy) for dx in range(3) for dy in range(3)]:
             if i == (x, y):
+                continue
+            if i not in self.multi_prob_grids_dict:
                 continue
             g = self.multi_prob_grids_dict[i]  # type:Grid
             if choice in g.prob:
                 g.prob.remove(choice)
                 g.chosen_by_same_9grids.add(choice)
 
-    def revert_same_row(self, x, y, choice):
+    def revert_same_row_col_9grids(self, grid):
+        x = grid.x
+        y = grid.y
+        choice = grid.chosen
+        # same row; x 变，y不变
         for i in range(9):
             if i == x:
+                continue
+            if (i, y) not in self.multi_prob_grids_dict:
                 continue
             g = self.multi_prob_grids_dict[(i, y)]  # type:Grid
             if choice in g.chosen_by_same_row:
                 g.chosen_by_same_row.remove(choice)
                 g.prob.add(choice)
-
-    def revert_same_col(self, x, y, choice):
+        # same col; x 不变; y 变
         for i in range(9):
             if i == y:
                 continue
-            g = self.multi_prob_grids_dict[(y, i)]  # type:Grid
+            if (x, i) not in self.multi_prob_grids_dict:
+                continue
+            g = self.multi_prob_grids_dict[(x, i)]  # type:Grid
             if choice in g.chosen_by_same_col:
                 g.chosen_by_same_col.remove(choice)
                 g.prob.add(choice)
-
-    def revert_same_9grids(self, x, y, choice):
+        # same 9 grids
         if not 0 <= y < 9:
             raise Exception("bad y")
         if not 0 <= x < 9:
@@ -157,6 +218,8 @@ class Solution:
         y_ = y // 3 * 3
         for i in [(x_ + dx, y_ + dy) for dx in range(3) for dy in range(3)]:
             if i == (x, y):
+                continue
+            if i not in self.multi_prob_grids_dict:
                 continue
             g = self.multi_prob_grids_dict[i]  # type:Grid
             if choice in g.chosen_by_same_9grids:
@@ -164,10 +227,6 @@ class Solution:
                 g.prob.add(choice)
 
     def simple_elimination(self):
-        """
-        简单排除法
-        :return:
-        """
         grids = self.multi_prob_grids
         grids.sort()
         while grids and len(grids[0].prob) == 1:
@@ -183,39 +242,14 @@ class Solution:
                 del self.multi_prob_grids_dict[(g.x, g.y)]
                 grids.pop(0)
 
-    def try_it(self):
-        grids = self.multi_prob_grids
-        grids.sort()
-        if grids and grids[0].prob_count() == grids[-1].prob_count() == 1:
-            return True
-        for g in grids:  # type:Grid
-            if g.prob_count() == 0:
-                if not self.action_history:
-                    return False
-                last_g = self.action_history.pop()
-                self.revert_same_row(last_g.x, last_g.y, last_g.chosen)
-                self.revert_same_col(last_g.x, last_g.y, last_g.chosen)
-                self.revert_same_9grids(last_g.x, last_g.y, last_g.chosen)
-            if g.prob_count() == 1:
-                continue
-            choice = g.new_chosen()
-            if choice == ".":
-                raise Exception("bad")
-            self.process_same_row(g.x, g.y, choice)
-            self.process_same_col(g.x, g.y, choice)
-            self.process_same_9grids(g.x, g.y, choice)
-            self.action_history.append(g, choice)
-            break
-
     def solveSudoku(self, board):
         """
         :type board: list[list[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
         # 清理
+        self.__init__()
         self.board = board
-        self.multi_prob_grids_dict = dict()  # type:{tuple:Grid}
-        self.multi_prob_grids = []
         # 整理空grid的可能性
         # 建立list和坐标索引
         for x in range(9):
@@ -228,13 +262,14 @@ class Solution:
                     self.multi_prob_grids.append(g)
         self.clear_prob_set_by_board()
 
-        print(len(self.multi_prob_grids))
+        # print(len(self.multi_prob_grids))
         self.simple_elimination()
-        print(len(self.multi_prob_grids))
-        print(len(self.multi_prob_grids_dict))
+        # print(len(self.multi_prob_grids))
         if len(self.multi_prob_grids) == 0:
+            # print(self.board)
             return
-        print(self.board)
+        self.visit_first_child()
+        self.depth_first_search()
 
 
 if __name__ == '__main__':
@@ -268,3 +303,17 @@ if __name__ == '__main__':
         else:
             pass
             # print(d, answer)
+    import re
+
+    pe_data_file = open('./p096_sudoku.txt', "r")
+    pe_data_lines = pe_data_file.readlines()
+    sudokus = []
+    for i in range(50):
+        sudokus.append([])
+        for j in range(1, 10):
+            sudokus[-1].append(re.findall(".", pe_data_lines[i * 10 + j].replace("0", ".")))
+    sum = 0
+    for sudoku in sudokus:
+        s.solveSudoku(sudoku)
+        sum += int("".join(s.board[0][0:3]))
+    print(sum)
