@@ -17,7 +17,7 @@ class DFSTree:
     def found(self):
         pass
 
-    def not_found(self):
+    def complete(self):
         pass
 
     def has_children(self):
@@ -38,11 +38,15 @@ class DFSTree:
     def back_to_parent(self):
         pass
 
+    def go_on(self):
+        return True
+
     def depth_first_search(self):
         while True:
             if self.is_target():
                 self.found()
-                return True
+                if not self.go_on():
+                    return True
             if self.has_children():
                 self.visit_first_child()
             elif self.has_next_sibling():
@@ -50,7 +54,7 @@ class DFSTree:
             else:
                 while not self.has_next_sibling():
                     if not self.has_parent():
-                        self.not_found()
+                        self.complete()
                         return False
                     self.back_to_parent()
                 self.visit_next_sibling()

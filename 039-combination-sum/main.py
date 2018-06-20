@@ -32,10 +32,10 @@ class Solution:
         def build_next(index_list):
             # 从后向前找到第一个不是最大值的位置
             # 如果所有值为最大值，已经遍历所有可能，通过清空stack来退出
-            while index_list and index_list[-1]>=len(candidates)-1:
+            while index_list and index_list[-1] >= len(candidates) - 1:
                 index_list.pop()
             if index_list:
-                index_list[-1]+=1
+                index_list[-1] += 1
             return
 
         res = []
