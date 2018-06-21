@@ -101,8 +101,8 @@ if __name__ == "__main__":
         [("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c"), False],
     ]
     for i in data:
-        print("----")
-        print(i[0][1], prepare_p(i[0][1]))
+        #print("----")
+        #print(i[0][1], prepare_p(i[0][1]))
         r = s.isMatch(*i[0]) == i[1]
         if not r:
             print(i[0])
