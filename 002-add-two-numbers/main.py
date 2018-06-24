@@ -35,9 +35,9 @@ def build_list(l):
 
 def print_list(a):
     while a:
-        print a.val,
+        print(a.val, end="")
         a = a.next
-    print "\n",
+    print("\n", end="")
 
 
 class Solution:
