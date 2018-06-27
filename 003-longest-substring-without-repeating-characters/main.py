@@ -32,8 +32,8 @@ class Solution:
 
 if __name__ == "__main__":
     s=Solution()
-    print s.lengthOfLongestSubstring("abcabcbb")
-    print s.lengthOfLongestSubstring("aaaa")
-    print s.lengthOfLongestSubstring("pwwkew")
-    print s.lengthOfLongestSubstring("p")
-    print s.lengthOfLongestSubstring("jlygy")
+    print(s.lengthOfLongestSubstring("abcabcbb"))
+    print(s.lengthOfLongestSubstring("aaaa"))
+    print(s.lengthOfLongestSubstring("pwwkew"))
+    print(s.lengthOfLongestSubstring("p"))
+    print(s.lengthOfLongestSubstring("jlygy"))
