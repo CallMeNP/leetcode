@@ -1,0 +1,12 @@
+{
+    "plugins": ["uml" , "include-codeblock" ],
+    "pluginsConfig": {
+        "uml":{
+            "charset":"UTF-8"
+        },
+        "disqus": {
+            "useIdentifier":true,
+            "shortName": "nprfc"
+        }
+    }
+}
