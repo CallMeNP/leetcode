@@ -1,0 +1,27 @@
+curl 'https://leetcode-cn.com/graphql'\
+ -H 'Pragma: no-cache'\
+ -H 'Origin: https://leetcode-cn.com'\
+ -H 'Accept-Encoding: gzip, deflate, br'\
+ -H 'Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7'\
+ -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'\
+ -H 'content-type: application/json'\
+ -H 'accept: */*'\
+ -H 'Cache-Control: no-cache'\
+ -H 'X-CSRFToken: b408Rc7FmPUtXvJs7qENtjD8CxmOoQXHFkBFWeZEGqbRxRs915BacuqPDoVcclnW'\
+ -H 'Referer: https://leetcode-cn.com/problemset/all/'\
+ -H 'Cookie: _uab_collina=152464567532302338844061; O5LM_2132_nofavfid=1; O5LM_2132_ulastactivity=7295dUz%2BuTP%2BDz0RgJQEu9Th9KTJO%2BwGiFdwzKyTCCQTOpwrvOFM; O5LM_2132_lip=1.119.193.36%2C1526193538; Hm_lvt_fa218a3ff7179639febdb15e372f411c=1529409902; __atuvc=0%7C22%2C24%7C23%2C0%7C24%2C97%7C25%2C32%7C26; csrftoken=b408Rc7FmPUtXvJs7qENtjD8CxmOoQXHFkBFWeZEGqbRxRs915BacuqPDoVcclnW; LEETCODE_SESSION=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkNhbGxNZU5QIiwidXNlcl9zbHVnIjoiY2FsbG1lbnAiLCJfYXV0aF91c2VyX2lkIjoiNjk4MjMiLCJSRU1PVEVfQUREUiI6IjEuMTE5LjE5My4zNiIsInRpbWVzdGFtcCI6IjIwMTgtMDYtMjggMDg6NDg6MzkuMjE0MDIwKzAwOjAwIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJlbWFpbCI6Im5wLmxpYW1nQGdtYWlsLmNvbSIsImF2YXRhciI6Imh0dHBzOi8vYWxpeXVuLWxjLXVwbG9hZC5vc3MtY24taGFuZ3pob3UuYWxpeXVuY3MuY29tL2FsaXl1bi1sYy11cGxvYWQvdXNlcnMvY2FsbG1lbnAvYXZhdGFyXzE1MjYxMDYwNDcucG5nIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2JkZGQ5OWM5ZmUwOGVhOTk5NzMzYjUzM2M5NmEzNGNjMmQwNTU0ZiIsImlkIjo2OTgyMywiSURFTlRJVFkiOiI0ZDBjNTdiOTU1YmQzZThmYzJlMGE0ZjJhMjgwMzVkMiIsInBob25lX3ZlcmlmaWVkIjp0cnVlLCJfc2Vzc2lvbl9leHBpcnkiOjB9.MZaHmZ77PTLgFaPoFkgngKtjvGDzGlmhdmEgtAZ1KzA; Hm_lpvt_fa218a3ff7179639febdb15e372f411c=1530265724'\
+ -H 'Connection: keep-alive'\
+ --data-binary '{"operationName":"getQuestionTranslation","variables":{},"query":"query getQuestionTranslation($lang: String) {\n  translations: allAppliedQuestionTranslations(lang: $lang) {\n    title\n    question {\n      questionId\n      __typename\n    }\n    __typename\n  }\n}\n"}' --compressed
+
+
+curl 'https://leetcode-cn.com/api/problems/all/'\
+ -H 'Pragma: no-cache'\
+ -H 'Accept-Encoding: gzip, deflate, br'\
+ -H 'Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7'\
+ -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+ -H 'Content-Type: application/json'\
+ -H 'Accept: application/json, text/javascript, */*; q=0.01'\
+ -H 'Cache-Control: no-cache'\
+ -H 'X-Requested-With: XMLHttpRequest'\
+ -H 'Cookie: _uab_collina=152464567532302338844061; O5LM_2132_nofavfid=1; O5LM_2132_ulastactivity=7295dUz%2BuTP%2BDz0RgJQEu9Th9KTJO%2BwGiFdwzKyTCCQTOpwrvOFM; O5LM_2132_lip=1.119.193.36%2C1526193538; Hm_lvt_fa218a3ff7179639febdb15e372f411c=1529409902; __atuvc=0%7C22%2C24%7C23%2C0%7C24%2C97%7C25%2C32%7C26; csrftoken=b408Rc7FmPUtXvJs7qENtjD8CxmOoQXHFkBFWeZEGqbRxRs915BacuqPDoVcclnW; LEETCODE_SESSION=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkNhbGxNZU5QIiwidXNlcl9zbHVnIjoiY2FsbG1lbnAiLCJfYXV0aF91c2VyX2lkIjoiNjk4MjMiLCJSRU1PVEVfQUREUiI6IjEuMTE5LjE5My4zNiIsInRpbWVzdGFtcCI6IjIwMTgtMDYtMjggMDg6NDg6MzkuMjE0MDIwKzAwOjAwIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJlbWFpbCI6Im5wLmxpYW1nQGdtYWlsLmNvbSIsImF2YXRhciI6Imh0dHBzOi8vYWxpeXVuLWxjLXVwbG9hZC5vc3MtY24taGFuZ3pob3UuYWxpeXVuY3MuY29tL2FsaXl1bi1sYy11cGxvYWQvdXNlcnMvY2FsbG1lbnAvYXZhdGFyXzE1MjYxMDYwNDcucG5nIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2JkZGQ5OWM5ZmUwOGVhOTk5NzMzYjUzM2M5NmEzNGNjMmQwNTU0ZiIsImlkIjo2OTgyMywiSURFTlRJVFkiOiI0ZDBjNTdiOTU1YmQzZThmYzJlMGE0ZjJhMjgwMzVkMiIsInBob25lX3ZlcmlmaWVkIjp0cnVlLCJfc2Vzc2lvbl9leHBpcnkiOjB9.MZaHmZ77PTLgFaPoFkgngKtjvGDzGlmhdmEgtAZ1KzA; Hm_lpvt_fa218a3ff7179639febdb15e372f411c=1530265724'\
+ -H 'Connection: keep-alive' -H 'Referer: https://leetcode-cn.com/problemset/all/' --compressed
