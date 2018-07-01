@@ -1,3 +1,4 @@
+# 所有题目的翻译
 curl 'https://leetcode-cn.com/graphql'\
  -H 'Pragma: no-cache'\
  -H 'Origin: https://leetcode-cn.com'\
@@ -13,7 +14,7 @@ curl 'https://leetcode-cn.com/graphql'\
  -H 'Connection: keep-alive'\
  --data-binary '{"operationName":"getQuestionTranslation","variables":{},"query":"query getQuestionTranslation($lang: String) {\n  translations: allAppliedQuestionTranslations(lang: $lang) {\n    title\n    question {\n      questionId\n      __typename\n    }\n    __typename\n  }\n}\n"}' --compressed
 
-
+# 所有题目列表
 curl 'https://leetcode-cn.com/api/problems/all/'\
  -H 'Pragma: no-cache'\
  -H 'Accept-Encoding: gzip, deflate, br'\
@@ -25,3 +26,19 @@ curl 'https://leetcode-cn.com/api/problems/all/'\
  -H 'X-Requested-With: XMLHttpRequest'\
  -H 'Cookie: _uab_collina=152464567532302338844061; O5LM_2132_nofavfid=1; O5LM_2132_ulastactivity=7295dUz%2BuTP%2BDz0RgJQEu9Th9KTJO%2BwGiFdwzKyTCCQTOpwrvOFM; O5LM_2132_lip=1.119.193.36%2C1526193538; Hm_lvt_fa218a3ff7179639febdb15e372f411c=1529409902; __atuvc=0%7C22%2C24%7C23%2C0%7C24%2C97%7C25%2C32%7C26; csrftoken=b408Rc7FmPUtXvJs7qENtjD8CxmOoQXHFkBFWeZEGqbRxRs915BacuqPDoVcclnW; LEETCODE_SESSION=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkNhbGxNZU5QIiwidXNlcl9zbHVnIjoiY2FsbG1lbnAiLCJfYXV0aF91c2VyX2lkIjoiNjk4MjMiLCJSRU1PVEVfQUREUiI6IjEuMTE5LjE5My4zNiIsInRpbWVzdGFtcCI6IjIwMTgtMDYtMjggMDg6NDg6MzkuMjE0MDIwKzAwOjAwIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJlbWFpbCI6Im5wLmxpYW1nQGdtYWlsLmNvbSIsImF2YXRhciI6Imh0dHBzOi8vYWxpeXVuLWxjLXVwbG9hZC5vc3MtY24taGFuZ3pob3UuYWxpeXVuY3MuY29tL2FsaXl1bi1sYy11cGxvYWQvdXNlcnMvY2FsbG1lbnAvYXZhdGFyXzE1MjYxMDYwNDcucG5nIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2JkZGQ5OWM5ZmUwOGVhOTk5NzMzYjUzM2M5NmEzNGNjMmQwNTU0ZiIsImlkIjo2OTgyMywiSURFTlRJVFkiOiI0ZDBjNTdiOTU1YmQzZThmYzJlMGE0ZjJhMjgwMzVkMiIsInBob25lX3ZlcmlmaWVkIjp0cnVlLCJfc2Vzc2lvbl9leHBpcnkiOjB9.MZaHmZ77PTLgFaPoFkgngKtjvGDzGlmhdmEgtAZ1KzA; Hm_lpvt_fa218a3ff7179639febdb15e372f411c=1530265724'\
  -H 'Connection: keep-alive' -H 'Referer: https://leetcode-cn.com/problemset/all/' --compressed
+
+# 取得tag下question列表
+curl 'https://leetcode-cn.com/graphql'\
+ -H 'Pragma: no-cache'\
+ -H 'Origin: https://leetcode-cn.com'\
+ -H 'Accept-Encoding: gzip, deflate, br'\
+ -H 'Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'\
+ -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'\
+ -H 'content-type: application/json'\
+ -H 'accept: */*'\
+ -H 'Cache-Control: no-cache'\
+ -H 'x-csrftoken: ER8g6nZ5LBxuBNEWHeQ43AbU2MUrgHAc9XzbhEU07E7IHfNqE7Qmg6RQnt4ThxIH'\
+ -H 'Referer: https://leetcode-cn.com/tag/array/'\
+ -H 'Cookie: _uab_collina=152610601688363167379192; _umdata=2BA477700510A7DF8A11C0B20BB23996F8A1E540FDA67E351B48A6A84DC63BB5F266EC4861E6FAD5CD43AD3E795C914CDCA48BBE46C0A1CBB469BA5A8DCA999C; O5LM_2132_lip=175.98.239.85%2C1526147989; O5LM_2132_st_t=17005%7C1526147989%7Ca944923461b542f9b10aa9e56832e6c6; O5LM_2132_ulastactivity=a4efJJrLzdGSfeuhyKvTerZiKzMvOj366tnO3MTIGD2%2Bj5d6WySC; O5LM_2132_st_p=17005%7C1526147999%7C55cf76ddebd3aecf5a333f4b3b646a5e; O5LM_2132_viewid=tid_61; O5LM_2132_smile=1D1; O5LM_2132_seccode=313.3c8243b992b31ee004; __atuvc=0%7C22%2C9%7C23%2C30%7C24%2C24%7C25%2C61%7C26; LEETCODE_SESSION=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkNhbGxNZU5QIiwidXNlcl9zbHVnIjoiY2FsbG1lbnAiLCJfYXV0aF91c2VyX2lkIjoiNjk4MjMiLCJSRU1PVEVfQUREUiI6IjEwMy44Ni43MC4yMjkiLCJ0aW1lc3RhbXAiOiIyMDE4LTA2LTI5IDE2OjQxOjE1Ljk3MjUyMSswMDowMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiaWQiOjY5ODIzLCJhdmF0YXIiOiJodHRwczovL2FsaXl1bi1sYy11cGxvYWQub3NzLWNuLWhhbmd6aG91LmFsaXl1bmNzLmNvbS9hbGl5dW4tbGMtdXBsb2FkL3VzZXJzL2NhbGxtZW5wL2F2YXRhcl8xNTI2MTA2MDQ3LnBuZyIsIl9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9oYXNoIjoiN2JkZGQ5OWM5ZmUwOGVhOTk5NzMzYjUzM2M5NmEzNGNjMmQwNTU0ZiIsImVtYWlsIjoibnAubGlhbWdAZ21haWwuY29tIiwiSURFTlRJVFkiOiIyMDkxMDcxZjcyZjhlZjExZDMzYmQyZjg3ZDIzYTA4NiIsInBob25lX3ZlcmlmaWVkIjp0cnVlLCJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sImljS3lqcXN6ZElTbiJdfQ.m98x2uTM1kcyPlPg3kaTRS405t6_5tBWgRt5_s5yTuk; csrftoken=ER8g6nZ5LBxuBNEWHeQ43AbU2MUrgHAc9XzbhEU07E7IHfNqE7Qmg6RQnt4ThxIH; Hm_lvt_fa218a3ff7179639febdb15e372f411c=1528815170; Hm_lpvt_fa218a3ff7179639febdb15e372f411c=1530331770'\
+ -H 'Connection: keep-alive'\
+ --data-binary '{"operationName":"getTopicTag","variables":{"slug":"array"},"query":"query getTopicTag($slug: String!) {\n  topicTag(slug: $slug) {\n    name\n    translatedName\n    questions {\n      status\n      questionId\n      questionFrontendId\n      title\n      titleSlug\n      translatedTitle\n      stats\n      difficulty\n      isPaidOnly\n      topicTags {\n        name\n        translatedName\n        slug\n        __typename\n      }\n      companyTags {\n        name\n        translatedName\n        slug\n        __typename\n      }\n      __typename\n    }\n    frequencies\n    __typename\n  }\n  favoritesLists\n}\n"}' --compressed

@@ -1,0 +1,665 @@
+slug_title,paid_only,frontend_id,title_en,difficulty,title_zh,id
+exam-room,False,855,Exam Room,2,考场就座,885
+k-similar-strings,False,854,K-Similar Strings,3,相似度为 K 的字符串,884
+car-fleet,False,853,Car Fleet,2,车队,883
+peak-index-in-a-mountain-array,False,852,Peak Index in a Mountain Array,1,山脉数组的峰顶索引,882
+loud-and-rich,False,851,Loud and Rich,2,喧闹和富有,881
+rectangle-area-ii,False,850,Rectangle Area II,3,矩形面积 II,880
+maximize-distance-to-closest-person,False,849,Maximize Distance to Closest Person,1,到最近的人的最大距离,879
+shifting-letters,False,848,Shifting Letters,2,字母移位,878
+shortest-path-visiting-all-nodes,False,847,Shortest Path Visiting All Nodes,3,访问所有节点的最短路径,877
+hand-of-straights,False,846,Hand of Straights,2,一手顺子,876
+longest-mountain-in-array,False,845,Longest Mountain in Array,2,数组中的最长山脉,875
+backspace-string-compare,False,844,Backspace String Compare,1,比较含退格的字符串,874
+guess-the-word,False,843,Guess the Word,3,猜猜这个单词,873
+split-array-into-fibonacci-sequence,False,842,Split Array into Fibonacci Sequence,2,将数组拆分成斐波那契序列,872
+keys-and-rooms,False,841,Keys and Rooms,2,钥匙和房间,871
+magic-squares-in-grid,False,840,Magic Squares In Grid,1,矩阵中的幻方,870
+similar-string-groups,False,839,Similar String Groups,3,相似字符串组,869
+push-dominoes,False,838,Push Dominoes,2,推多米诺,868
+new-21-game,False,837,New 21 Game,2,新21点,867
+rectangle-overlap,False,836,Rectangle Overlap,1,矩形重叠,866
+image-overlap,False,835,Image Overlap,2,,864
+sum-of-distances-in-tree,False,834,Sum of Distances in Tree,3,树中距离之和,863
+find-and-replace-in-string,False,833,Find And Replace in String,2,,862
+flipping-an-image,False,832,Flipping an Image,1,翻转图像,861
+masking-personal-information,False,831,Masking Personal Information,2,,858
+positions-of-large-groups,False,830,Positions of Large Groups,1,较大分组的位置,857
+consecutive-numbers-sum,False,829,Consecutive Numbers Sum,2,连续整数求和,856
+unique-letter-string,False,828,Unique Letter String,3,独特字符串,855
+making-a-large-island,False,827,Making A Large Island,3,最大人工岛,854
+most-profit-assigning-work,False,826,Most Profit Assigning Work,2,,853
+friends-of-appropriate-ages,False,825,Friends Of Appropriate Ages,2,适龄的朋友,852
+goat-latin,False,824,Goat Latin,1,山羊拉丁文,851
+binary-trees-with-factors,False,823,Binary Trees With Factors,2,,843
+card-flipping-game,False,822,Card Flipping Game,2,,842
+shortest-distance-to-a-character,False,821,Shortest Distance to a Character,1,字符的最短距离,841
+short-encoding-of-words,False,820,Short Encoding of Words,2,,839
+most-common-word,False,819,Most Common Word,1,最常见的单词,837
+race-car,False,818,Race Car,3,赛车,836
+linked-list-components,False,817,Linked List Components,2,,835
+ambiguous-coordinates,False,816,Ambiguous Coordinates,2,,834
+bus-routes,False,815,Bus Routes,3,公交路线,833
+binary-tree-pruning,False,814,Binary Tree Pruning,2,二叉树剪枝,832
+largest-sum-of-averages,False,813,Largest Sum of Averages,2,最大平均值和的分组,831
+largest-triangle-area,False,812,Largest Triangle Area,1,最大三角形面积,830
+subdomain-visit-count,False,811,Subdomain Visit Count,1,子域名访问计数,829
+chalkboard-xor-game,False,810,Chalkboard XOR Game,3,黑板异或游戏,828
+expressive-words,False,809,Expressive Words,2,情感丰富的文字,827
+soup-servings,False,808,Soup Servings,2,分汤,826
+max-increase-to-keep-city-skyline,False,807,Max Increase to Keep City Skyline,2,保持城市天际线,825
+number-of-lines-to-write-string,False,806,Number of Lines To Write String,1,写字符串需要的行数,824
+split-array-with-same-average,False,805,Split Array With Same Average,3,数组的均值分割,823
+unique-morse-code-words,False,804,Unique Morse Code Words,1,唯一摩尔斯密码词,822
+bricks-falling-when-hit,False,803,Bricks Falling When Hit,3,打砖块,821
+find-eventual-safe-states,False,802,Find Eventual Safe States,2,,820
+minimum-swaps-to-make-sequences-increasing,False,801,Minimum Swaps To Make Sequences Increasing,2,使序列递增的最小交换次数,819
+champagne-tower,False,799,Champagne Tower,2,香槟塔,815
+smallest-rotation-with-highest-score,False,798,Smallest Rotation with Highest Score,3,,814
+all-paths-from-source-to-target,False,797,All Paths From Source to Target,2,,813
+rotate-string,False,796,Rotate String,1,旋转字符串,812
+number-of-subarrays-with-bounded-maximum,False,795,Number of Subarrays with Bounded Maximum,2,区间子数组个数,811
+valid-tic-tac-toe-state,False,794,Valid Tic-Tac-Toe State,2,有效的井字游戏,810
+preimage-size-of-factorial-zeroes-function,False,793,Preimage Size of Factorial Zeroes Function,3,阶乘函数后K个零,809
+number-of-matching-subsequences,False,792,Number of Matching Subsequences,2,匹配子序列的单词数,808
+custom-sort-string,False,791,Custom Sort String,2,自定义字符串排序,807
+domino-and-tromino-tiling,False,790,Domino and Tromino Tiling,2,,806
+escape-the-ghosts,False,789,Escape The Ghosts,2,逃脱阻碍者,805
+rotated-digits,False,788,Rotated Digits,1,旋转数字,804
+cheapest-flights-within-k-stops,False,787,Cheapest Flights Within K Stops,2,K 站中转内最便宜的航班,803
+k-th-smallest-prime-fraction,False,786,K-th Smallest Prime Fraction,3,,802
+is-graph-bipartite,False,785,Is Graph Bipartite?,2,判断二分图,801
+letter-case-permutation,False,784,Letter Case Permutation,1,字母大小写全排列,800
+minimum-distance-between-bst-nodes,False,783,Minimum Distance Between BST Nodes,1,二叉搜索树结点最小距离,799
+transform-to-chessboard,False,782,Transform to Chessboard,3,,798
+rabbits-in-forest,False,781,Rabbits in Forest,2,森林中的兔子,797
+reaching-points,False,780,Reaching Points,3,,796
+k-th-symbol-in-grammar,False,779,K-th Symbol in Grammar,2,第K个语法符号,795
+swim-in-rising-water,False,778,Swim in Rising Water,3,,794
+swap-adjacent-in-lr-string,False,777,Swap Adjacent in LR String,2,在LR字符串中交换相邻字符,793
+global-and-local-inversions,False,775,Global and Local Inversions,2,,790
+sliding-puzzle,False,773,Sliding Puzzle,3,,787
+jewels-and-stones,False,771,Jewels and Stones,1,宝石与石头,782
+basic-calculator-iv,False,770,Basic Calculator IV,3,,781
+max-chunks-to-make-sorted,False,769,Max Chunks To Make Sorted,2,最多能完成排序的块,780
+max-chunks-to-make-sorted-ii,False,768,Max Chunks To Make Sorted II,3,最多能完成排序的块 II,779
+reorganize-string,False,767,Reorganize String,2,重构字符串,778
+toeplitz-matrix,False,766,Toeplitz Matrix,1,托普利茨矩阵,777
+couples-holding-hands,False,765,Couples Holding Hands,3,情侣牵手,770
+largest-plus-sign,False,764,Largest Plus Sign,2,,769
+partition-labels,False,763,Partition Labels,2,划分字母区间,768
+prime-number-of-set-bits-in-binary-representation,False,762,Prime Number of Set Bits in Binary Representation,1,二进制表示中质数个计算置位,767
+special-binary-string,False,761,Special Binary String,3,特殊的二进制序列,763
+set-intersection-size-at-least-two,False,757,Set Intersection Size At Least Two,3, 设置交集大小至少为2,759
+pyramid-transition-matrix,False,756,Pyramid Transition Matrix,2,金字塔转换矩阵,757
+reach-a-number,False,754,Reach a Number,2,到达终点数字,755
+cracking-the-safe,False,753,Cracking the Safe,3,,754
+open-the-lock,False,752,Open the Lock,2,,753
+contain-virus,False,749,Contain Virus,3,,750
+shortest-completing-word,False,748,Shortest Completing Word,2,,749
+largest-number-at-least-twice-of-others,False,747,Largest Number At Least Twice of Others,1,至少是其他数字两倍的最大数,748
+min-cost-climbing-stairs,False,746,Min Cost Climbing Stairs,1,使用最小花费爬楼梯,747
+prefix-and-suffix-search,False,745,Prefix and Suffix Search,3,前缀和后缀搜索,746
+find-smallest-letter-greater-than-target,False,744,Find Smallest Letter Greater Than Target,1,寻找比目标字母大的最小字母,745
+network-delay-time,False,743,Network Delay Time,2,网络延迟时间,744
+cherry-pickup,False,741,Cherry Pickup,3,摘樱桃,741
+delete-and-earn,False,740,Delete and Earn,2,删除与获得点数,740
+daily-temperatures,False,739,Daily Temperatures,2,每日温度,739
+monotone-increasing-digits,False,738,Monotone Increasing Digits,2,738.单调递增的数字,738
+parse-lisp-expression,False,736,Parse Lisp Expression,3,,736
+asteroid-collision,False,735,Asteroid Collision,2,行星碰撞,735
+flood-fill,False,733,Flood Fill,1,图像渲染,733
+my-calendar-iii,False,732,My Calendar III,3,我的日程安排表 III,732
+my-calendar-ii,False,731,My Calendar II,2,我的日程安排表 II,731
+count-different-palindromic-subsequences,False,730,Count Different Palindromic Subsequences,3,,730
+my-calendar-i,False,729,My Calendar I,2,我的日程安排表 I,729
+self-dividing-numbers,False,728,Self Dividing Numbers,1,自除数,728
+number-of-atoms,False,726,Number of Atoms,3,原子的数量,726
+split-linked-list-in-parts,False,725,Split Linked List in Parts,2,,725
+find-pivot-index,False,724,Find Pivot Index,1,寻找数组的中心索引,724
+remove-comments,False,722,Remove Comments,2,删除注释,722
+accounts-merge,False,721,Accounts Merge,2,账户合并,721
+longest-word-in-dictionary,False,720,Longest Word in Dictionary,1,词典中最长的单词,720
+find-k-th-smallest-pair-distance,False,719,Find K-th Smallest Pair Distance,3,找出第 k 小的距离对,719
+maximum-length-of-repeated-subarray,False,718,Maximum Length of Repeated Subarray,2,最长重复子数组,718
+1-bit-and-2-bit-characters,False,717,1-bit and 2-bit Characters,1,1比特与2比特字符,717
+range-module,False,715,Range Module,3,,715
+best-time-to-buy-and-sell-stock-with-transaction-fee,False,714,Best Time to Buy and Sell Stock with Transaction Fee,2,买卖股票的最佳时机含手续费,714
+subarray-product-less-than-k,False,713,Subarray Product Less Than K,2,乘积小于K的子数组,713
+minimum-ascii-delete-sum-for-two-strings,False,712,Minimum ASCII Delete Sum for Two Strings,2,两个字符串的最小ASCII删除和,712
+falling-squares,False,699,Falling Squares,3,,699
+partition-to-k-equal-sum-subsets,False,698,Partition to K Equal Sum Subsets,2,划分为k个相等的子集,698
+degree-of-an-array,False,697,Degree of an Array,1,数组的度,697
+count-binary-substrings,False,696,Count Binary Substrings,1,计数二进制子串,696
+max-area-of-island,False,695,Max Area of Island,1,岛屿的最大面积,695
+binary-number-with-alternating-bits,False,693,Binary Number with Alternating Bits,1,交替位二进制数,693
+top-k-frequent-words,False,692,Top K Frequent Words,2,前K个高频单词,692
+stickers-to-spell-word,False,691,Stickers to Spell Word,3,,691
+employee-importance,False,690,Employee Importance,1,员工的重要性,690
+maximum-sum-of-3-non-overlapping-subarrays,False,689,Maximum Sum of 3 Non-Overlapping Subarrays,3,三个无重叠子数组的最大和,689
+knight-probability-in-chessboard,False,688,Knight Probability in Chessboard,2,“马”在棋盘上的概率,688
+longest-univalue-path,False,687,Longest Univalue Path,1,最长同值路径,687
+repeated-string-match,False,686,Repeated String Match,1,重复叠加字符串匹配,686
+redundant-connection-ii,False,685,Redundant Connection II,3,冗余连接 II,685
+redundant-connection,False,684,Redundant Connection,2,冗余连接,684
+baseball-game,False,682,Baseball Game,1,棒球比赛,682
+valid-palindrome-ii,False,680,Valid Palindrome II,1,验证回文字符串 Ⅱ,680
+24-game,False,679,24 Game,3,24点游戏,679
+valid-parenthesis-string,False,678,Valid Parenthesis String,2,有效的括号字符串,678
+map-sum-pairs,False,677,Map Sum Pairs,2,键值映射,677
+implement-magic-dictionary,False,676,Implement Magic Dictionary,2,实现一个魔法字典,676
+cut-off-trees-for-golf-event,False,675,Cut Off Trees for Golf Event,3,,675
+longest-continuous-increasing-subsequence,False,674,Longest Continuous Increasing Subsequence,1,最长连续递增序列,674
+number-of-longest-increasing-subsequence,False,673,Number of Longest Increasing Subsequence,2,最长递增子序列的个数,673
+bulb-switcher-ii,False,672,Bulb Switcher II,2,灯泡开关 Ⅱ,672
+second-minimum-node-in-a-binary-tree,False,671,Second Minimum Node In a Binary Tree,1,二叉树中第二小的节点,671
+maximum-swap,False,670,Maximum Swap,2,最大交换,670
+trim-a-binary-search-tree,False,669,Trim a Binary Search Tree,1,修剪二叉搜索树,669
+kth-smallest-number-in-multiplication-table,False,668,Kth Smallest Number in Multiplication Table,3,乘法表中第k小的数,668
+beautiful-arrangement-ii,False,667,Beautiful Arrangement II,2,,667
+non-decreasing-array,False,665,Non-decreasing Array,1,非递减数列,665
+strange-printer,False,664,Strange Printer,3,奇怪的打印机,664
+maximum-width-of-binary-tree,False,662,Maximum Width of Binary Tree,2,二叉树最大宽度,662
+image-smoother,False,661,Image Smoother,1,图片平滑器,661
+split-array-into-consecutive-subsequences,False,659,Split Array into Consecutive Subsequences,2,,659
+find-k-closest-elements,False,658,Find K Closest Elements,2,,658
+judge-route-circle,False,657,Judge Route Circle,1,判断路线成圈,657
+print-binary-tree,False,655,Print Binary Tree,2,输出二叉树,655
+maximum-binary-tree,False,654,Maximum Binary Tree,2,最大二叉树,654
+two-sum-iv-input-is-a-bst,False,653,Two Sum IV - Input is a BST,1,两数之和 IV - 输入 BST,653
+find-duplicate-subtrees,False,652,Find Duplicate Subtrees,2,寻找重复的子树,652
+2-keys-keyboard,False,650,2 Keys Keyboard,2,只有两个键的键盘,650
+dota2-senate,False,649,Dota2 Senate,2,,649
+replace-words,False,648,Replace Words,2,单词替换,648
+palindromic-substrings,False,647,Palindromic Substrings,2,回文子串,647
+maximum-length-of-pair-chain,False,646,Maximum Length of Pair Chain,2,最长数对链,646
+set-mismatch,False,645,Set Mismatch,1,错误的集合,645
+maximum-average-subarray-i,False,643,Maximum Average Subarray I,1,子数组最大平均数 I,643
+solve-the-equation,False,640,Solve the Equation,2,求解方程,640
+decode-ways-ii,False,639,Decode Ways II,3,解码方法 2,639
+shopping-offers,False,638,Shopping Offers,2,大礼包,638
+average-of-levels-in-binary-tree,False,637,Average of Levels in Binary Tree,1,二叉树的层平均值,637
+exclusive-time-of-functions,False,636,Exclusive Time of Functions,2,函数的独占时间,636
+sum-of-square-numbers,False,633,Sum of Square Numbers,1,平方数之和,633
+smallest-range,False,632,Smallest Range,3,最小区间,632
+course-schedule-iii,False,630,Course Schedule III,3,,630
+k-inverse-pairs-array,False,629,K Inverse Pairs Array,3,K个逆序对数组,629
+maximum-product-of-three-numbers,False,628,Maximum Product of Three Numbers,1,三个数的最大乘积,628
+swap-salary,False,627,Swap Salary,1,交换工资,627
+exchange-seats,False,626,Exchange Seats,2,换座位,626
+add-one-row-to-tree,False,623,Add One Row to Tree,2,在二叉树中增加一行,623
+task-scheduler,False,621,Task Scheduler,2,任务调度器,621
+not-boring-movies,False,620,Not Boring Movies,1,有趣的电影,620
+merge-two-binary-trees,False,617,Merge Two Binary Trees,1,合并二叉树,617
+valid-triangle-number,False,611,Valid Triangle Number,2,有效三角形的个数,611
+find-duplicate-file-in-system,False,609,Find Duplicate File in System,2,,609
+construct-string-from-binary-tree,False,606,Construct String from Binary Tree,1,根据二叉树创建字符串,606
+can-place-flowers,False,605,Can Place Flowers,1,种花问题,605
+human-traffic-of-stadium,False,601,Human Traffic of Stadium,3,体育馆的人流量,601
+non-negative-integers-without-consecutive-ones,False,600,Non-negative Integers without Consecutive Ones,3,不含连续1的非负整数,600
+minimum-index-sum-of-two-lists,False,599,Minimum Index Sum of Two Lists,1,两个列表的最小索引总和,599
+range-addition-ii,False,598,Range Addition II,1,范围求和 II,598
+classes-more-than-5-students,False,596,Classes More Than 5 Students,1,超过5名学生的课,596
+big-countries,False,595,Big Countries,1,大的国家,595
+longest-harmonious-subsequence,False,594,Longest Harmonious Subsequence,1,最长和谐子序列,594
+valid-square,False,593,Valid Square,2,有效的正方形,593
+fraction-addition-and-subtraction,False,592,Fraction Addition and Subtraction,2,分数加减运算,592
+tag-validator,False,591,Tag Validator,3,标签验证器,591
+erect-the-fence,False,587,Erect the Fence,3,安装栅栏,587
+delete-operation-for-two-strings,False,583,Delete Operation for Two Strings,2,两个字符串的删除操作,583
+shortest-unsorted-continuous-subarray,False,581,Shortest Unsorted Continuous Subarray,1,最短无序连续子数组,581
+out-of-boundary-paths,False,576,Out of Boundary Paths,2,出界的路径数,576
+distribute-candies,False,575,Distribute Candies,1,分糖果,575
+subtree-of-another-tree,False,572,Subtree of Another Tree,1,另一个树的子树,572
+permutation-in-string,False,567,Permutation in String,2,字符串的排列,567
+reshape-the-matrix,False,566,Reshape the Matrix,1,重塑矩阵,566
+array-nesting,False,565,Array Nesting,2,数组嵌套,565
+find-the-closest-palindrome,False,564,Find the Closest Palindrome,3,寻找最近的回文数,564
+binary-tree-tilt,False,563,Binary Tree Tilt,1,二叉树的坡度,563
+array-partition-i,False,561,Array Partition I,1,数组拆分 I,561
+subarray-sum-equals-k,False,560,Subarray Sum Equals K,2,和为K的子数组,560
+reverse-words-in-a-string-iii,False,557,Reverse Words in a String III,1,反转字符串中的单词 III,557
+next-greater-element-iii,False,556,Next Greater Element III,2,下一个更大元素 III,556
+brick-wall,False,554,Brick Wall,2,砖墙,554
+optimal-division,False,553,Optimal Division,2,最优除法,553
+student-attendance-record-ii,False,552,Student Attendance Record II,3,学生出勤记录 II,552
+student-attendance-record-i,False,551,Student Attendance Record I,1,学生出勤纪录 I,551
+friend-circles,False,547,Friend Circles,2,朋友圈,547
+remove-boxes,False,546,Remove Boxes,3,,546
+diameter-of-binary-tree,False,543,Diameter of Binary Tree,1,二叉树的直径,543
+01-matrix,False,542,01 Matrix,2,01 矩阵,542
+reverse-string-ii,False,541,Reverse String II,1,反转字符串 II,541
+single-element-in-a-sorted-array,False,540,Single Element in a Sorted Array,2,有序数组中的单一元素,540
+minimum-time-difference,False,539,Minimum Time Difference,2,最小时间差,539
+convert-bst-to-greater-tree,False,538,Convert BST to Greater Tree,1,把二叉搜索树转换为累加树,538
+complex-number-multiplication,False,537,Complex Number Multiplication,2,复数乘法,537
+encode-and-decode-tinyurl,False,535,Encode and Decode TinyURL,2,TinyURL 的加密与解密,535
+k-diff-pairs-in-an-array,False,532,K-diff Pairs in an Array,1,数组中的K-diff数对,532
+minimum-absolute-difference-in-bst,False,530,Minimum Absolute Difference in BST,1,二叉搜索树的最小绝对差,530
+minesweeper,False,529,Minesweeper,2,扫雷游戏,529
+beautiful-arrangement,False,526,Beautiful Arrangement,2,优美的排列,526
+contiguous-array,False,525,Contiguous Array,2,连续数组,525
+longest-word-in-dictionary-through-deleting,False,524,Longest Word in Dictionary through Deleting,2,通过删除字母匹配到字典里最长单词,524
+continuous-subarray-sum,False,523,Continuous Subarray Sum,2,连续的子数组和,523
+longest-uncommon-subsequence-ii,False,522,Longest Uncommon Subsequence II,2,,522
+longest-uncommon-subsequence-i,False,521,Longest Uncommon Subsequence I ,1,最长特殊序列 Ⅰ,521
+detect-capital,False,520,Detect Capital,1,检测大写字母,520
+coin-change-2,False,518,Coin Change 2,2,零钱兑换 II,518
+super-washing-machines,False,517,Super Washing Machines,3,超级洗衣机,517
+longest-palindromic-subsequence,False,516,Longest Palindromic Subsequence,2,最长回文子序列,516
+find-largest-value-in-each-tree-row,False,515,Find Largest Value in Each Tree Row,2,在每个树行中找最大值,515
+freedom-trail,False,514,Freedom Trail,3,,514
+find-bottom-left-tree-value,False,513,Find Bottom Left Tree Value,2,找树左下角的值,513
+most-frequent-subtree-sum,False,508,Most Frequent Subtree Sum,2,,508
+perfect-number,False,507,Perfect Number,1,完美数,507
+relative-ranks,False,506,Relative Ranks,1,相对名次,506
+base-7,False,504,Base 7,1,七进制数,504
+next-greater-element-ii,False,503,Next Greater Element II,2,下一个更大元素 II,503
+ipo,False,502,IPO,3,,502
+find-mode-in-binary-search-tree,False,501,Find Mode in Binary Search Tree,1,二叉搜索树中的众数,501
+keyboard-row,False,500,Keyboard Row,1,键盘行,500
+diagonal-traverse,False,498,Diagonal Traverse,2,对角线遍历,498
+next-greater-element-i,False,496,Next Greater Element I,1,下一个更大元素 I,496
+teemo-attacking,False,495,Teemo Attacking,2,提莫攻击,495
+target-sum,False,494,Target Sum,2,目标和,494
+reverse-pairs,False,493,Reverse Pairs,3,翻转对,493
+construct-the-rectangle,False,492,Construct the Rectangle,1,构造矩形,492
+increasing-subsequences,False,491,Increasing Subsequences,2,递增子序列,491
+zuma-game,False,488,Zuma Game,3,祖玛游戏,488
+predict-the-winner,False,486,Predict the Winner,2,预测赢家,486
+max-consecutive-ones,False,485,Max Consecutive Ones,1,最大连续1的个数,485
+smallest-good-base,False,483,Smallest Good Base,3,,483
+license-key-formatting,False,482,License Key Formatting,1,密钥格式化,482
+magical-string,False,481,Magical String,2,神奇字符串,481
+sliding-window-median,False,480,Sliding Window Median,3,,480
+largest-palindrome-product,False,479,Largest Palindrome Product,1,最大回文数乘积,479
+total-hamming-distance,False,477,Total Hamming Distance,2,汉明距离总和,477
+number-complement,False,476,Number Complement,1,数字的补数,476
+heaters,False,475,Heaters,1,供暖器,475
+ones-and-zeroes,False,474,Ones and Zeroes,2,一和零,474
+matchsticks-to-square,False,473,Matchsticks to Square,2,火柴拼正方形,473
+concatenated-words,False,472,Concatenated Words,3,连接词,472
+validate-ip-address,False,468,Validate IP Address,2,验证IP地址,468
+unique-substrings-in-wraparound-string,False,467,Unique Substrings in Wraparound String,2,,467
+count-the-repetitions,False,466,Count The Repetitions,3,,466
+can-i-win,False,464,Can I Win,2,我能赢吗,464
+island-perimeter,False,463,Island Perimeter,1,岛屿的周长,463
+minimum-moves-to-equal-array-elements-ii,False,462,Minimum Moves to Equal Array Elements II,2,最少移动次数使数组元素相等 II,462
+hamming-distance,False,461,Hamming Distance,1,汉明距离,461
+lfu-cache,False,460,LFU Cache,3,LFU缓存,460
+repeated-substring-pattern,False,459,Repeated Substring Pattern,1,重复的子字符串,459
+poor-pigs,False,458,Poor Pigs,1,可怜的小猪,458
+circular-array-loop,False,457,Circular Array Loop,2,环形数组循环,457
+132-pattern,False,456,132 Pattern,2,132模式,456
+assign-cookies,False,455,Assign Cookies,1,分发饼干,455
+4sum-ii,False,454,4Sum II,2,四数相加 II,454
+minimum-moves-to-equal-array-elements,False,453,Minimum Moves to Equal Array Elements,1,最小移动次数使数组元素相等,453
+minimum-number-of-arrows-to-burst-balloons,False,452,Minimum Number of Arrows to Burst Balloons,2,用最少数量的箭引爆气球,452
+sort-characters-by-frequency,False,451,Sort Characters By Frequency,2,根据字符出现频率排序,451
+delete-node-in-a-bst,False,450,Delete Node in a BST,2,删除二叉搜索树中的节点,450
+serialize-and-deserialize-bst,False,449,Serialize and Deserialize BST,2,,449
+find-all-numbers-disappeared-in-an-array,False,448,Find All Numbers Disappeared in an Array,1,找到所有数组中消失的数字,448
+number-of-boomerangs,False,447,Number of Boomerangs,1,回旋镖的数量,447
+arithmetic-slices-ii-subsequence,False,446,Arithmetic Slices II - Subsequence,3,,446
+add-two-numbers-ii,False,445,Add Two Numbers II,2,两数相加 II,445
+string-compression,False,443,String Compression,1,压缩字符串,443
+find-all-duplicates-in-an-array,False,442,Find All Duplicates in an Array,2,数组中重复的数据,442
+arranging-coins,False,441,Arranging Coins,1,排列硬币,441
+k-th-smallest-in-lexicographical-order,False,440,K-th Smallest in Lexicographical Order,3,字典序的第K小数字,440
+find-all-anagrams-in-a-string,False,438,Find All Anagrams in a String,1,找到字符串中所有字母异位词,438
+path-sum-iii,False,437,Path Sum III,1,路径总和 III,437
+find-right-interval,False,436,Find Right Interval,2,寻找右区间,436
+non-overlapping-intervals,False,435,Non-overlapping Intervals,2,无重叠区间,435
+number-of-segments-in-a-string,False,434,Number of Segments in a String,1,字符串中的单词数,434
+minimum-genetic-mutation,False,433,Minimum Genetic Mutation,2,最小基因变化,433
+all-oone-data-structure,False,432,All O`one Data Structure,3,全 O(1) 的数据结构,432
+longest-repeating-character-replacement,False,424,Longest Repeating Character Replacement,2,替换后的最长重复字符,424
+reconstruct-original-digits-from-english,False,423,Reconstruct Original Digits from English,2,从英文中重建数字,423
+maximum-xor-of-two-numbers-in-an-array,False,421,Maximum XOR of Two Numbers in an Array,2,数组中两个数的最大异或值,421
+strong-password-checker,False,420,Strong Password Checker,3,强密码检验器,420
+battleships-in-a-board,False,419,Battleships in a Board,2,甲板上的战舰,419
+pacific-atlantic-water-flow,False,417,Pacific Atlantic Water Flow,2,,417
+partition-equal-subset-sum,False,416,Partition Equal Subset Sum,2,分割等和子集,416
+add-strings,False,415,Add Strings,1,字符串相加,415
+third-maximum-number,False,414,Third Maximum Number,1,第三大的数,414
+arithmetic-slices,False,413,Arithmetic Slices,2,等差数列划分,413
+fizz-buzz,False,412,Fizz Buzz,1,Fizz Buzz,412
+split-array-largest-sum,False,410,Split Array Largest Sum,3,分割数组的最大值,410
+longest-palindrome,False,409,Longest Palindrome,1,最长回文串,409
+trapping-rain-water-ii,False,407,Trapping Rain Water II,3,接雨水 II,407
+queue-reconstruction-by-height,False,406,Queue Reconstruction by Height,2,根据身高重建队列,406
+convert-a-number-to-hexadecimal,False,405,Convert a Number to Hexadecimal,1,数字转换为十六进制数,405
+sum-of-left-leaves,False,404,Sum of Left Leaves,1,左叶子之和,404
+frog-jump,False,403,Frog Jump,3,青蛙过河,403
+remove-k-digits,False,402,Remove K Digits,2,移掉K位数字,402
+binary-watch,False,401,Binary Watch,1,二进制手表,401
+nth-digit,False,400,Nth Digit,1,第N个数字,400
+evaluate-division,False,399,Evaluate Division,2,除法求值,399
+random-pick-index,False,398,Random Pick Index,2,随机数索引,398
+integer-replacement,False,397,Integer Replacement,2,整数替换,397
+rotate-function,False,396,Rotate Function,2,旋转函数,396
+longest-substring-with-at-least-k-repeating-characters,False,395,Longest Substring with At Least K Repeating Characters,2,至少有K个重复字符的最长子串,395
+decode-string,False,394,Decode String,2,字符串解码,394
+utf-8-validation,False,393,UTF-8 Validation,2,UTF-8 编码验证,393
+is-subsequence,False,392,Is Subsequence,2,判断子序列,392
+perfect-rectangle,False,391,Perfect Rectangle,3,完美矩形,391
+elimination-game,False,390,Elimination Game,2,消除游戏,390
+find-the-difference,False,389,Find the Difference,1,找不同,389
+longest-absolute-file-path,False,388,Longest Absolute File Path,2,文件的最长绝对路径,388
+first-unique-character-in-a-string,False,387,First Unique Character in a String,1,字符串中的第一个唯一字符,387
+lexicographical-numbers,False,386,Lexicographical Numbers,2,字典序排数,386
+mini-parser,False,385,Mini Parser,2,,385
+shuffle-an-array,False,384,Shuffle an Array,2,打乱数组,384
+ransom-note,False,383,Ransom Note,1,赎金信,383
+linked-list-random-node,False,382,Linked List Random Node,2,链表随机节点,382
+insert-delete-getrandom-o1-duplicates-allowed,False,381,Insert Delete GetRandom O(1) - Duplicates allowed,3,O(1) 时间插入、删除和获取随机元素 - 允许重复,381
+insert-delete-getrandom-o1,False,380,Insert Delete GetRandom O(1),2,常数时间插入、删除和获取随机元素,380
+kth-smallest-element-in-a-sorted-matrix,False,378,Kth Smallest Element in a Sorted Matrix,2,有序矩阵中第K小的元素,378
+combination-sum-iv,False,377,Combination Sum IV,2,组合总和 Ⅳ,377
+wiggle-subsequence,False,376,Wiggle Subsequence,2,摆动序列,376
+guess-number-higher-or-lower-ii,False,375,Guess Number Higher or Lower II,2,猜数字大小 II,375
+guess-number-higher-or-lower,False,374,Guess Number Higher or Lower,1,猜数字大小,374
+find-k-pairs-with-smallest-sums,False,373,Find K Pairs with Smallest Sums,2,查找和最小的K对数字,373
+super-pow,False,372,Super Pow,2,超级次方,372
+sum-of-two-integers,False,371,Sum of Two Integers,1,两整数之和,371
+largest-divisible-subset,False,368,Largest Divisible Subset,2,最大整除子集,368
+valid-perfect-square,False,367,Valid Perfect Square,1,有效的完全平方数,367
+water-and-jug-problem,False,365,Water and Jug Problem,2,水壶问题,365
+max-sum-of-rectangle-no-larger-than-k,False,363,Max Sum of Rectangle No Larger Than K,3,矩形区域不超过 K 的最大数值和,363
+count-numbers-with-unique-digits,False,357,Count Numbers with Unique Digits,2,计算各个位数不同的数字个数,357
+design-twitter,False,355,Design Twitter,2,设计推特,355
+russian-doll-envelopes,False,354,Russian Doll Envelopes,3,俄罗斯套娃信封问题,354
+data-stream-as-disjoint-intervals,False,352,Data Stream as Disjoint Intervals,3,,352
+intersection-of-two-arrays-ii,False,350,Intersection of Two Arrays II,1,两个数组的交集 II,350
+intersection-of-two-arrays,False,349,Intersection of Two Arrays,1,两个数组的交集,349
+top-k-frequent-elements,False,347,Top K Frequent Elements,2,前K个高频元素,347
+reverse-vowels-of-a-string,False,345,Reverse Vowels of a String,1,反转字符串中的元音字母,345
+reverse-string,False,344,Reverse String,1,反转字符串,344
+integer-break,False,343,Integer Break,2,整数拆分,343
+power-of-four,False,342,Power of Four,1,4的幂,342
+flatten-nested-list-iterator,False,341,Flatten Nested List Iterator,2,扁平化嵌套列表迭代器,341
+counting-bits,False,338,Counting Bits,2,Bit位计数,338
+house-robber-iii,False,337,House Robber III,2,打家劫舍 III,337
+palindrome-pairs,False,336,Palindrome Pairs,3,回文对,336
+self-crossing,False,335,Self Crossing,3,路径交叉,335
+increasing-triplet-subsequence,False,334,Increasing Triplet Subsequence,2,递增的三元子序列,334
+reconstruct-itinerary,False,332,Reconstruct Itinerary,2,,332
+verify-preorder-serialization-of-a-binary-tree,False,331,Verify Preorder Serialization of a Binary Tree,2,验证二叉树的前序序列化,331
+patching-array,False,330,Patching Array,3,按要求补齐数组,330
+longest-increasing-path-in-a-matrix,False,329,Longest Increasing Path in a Matrix,3,矩阵中的最长递增路径,329
+odd-even-linked-list,False,328,Odd Even Linked List,2,奇偶链表,328
+count-of-range-sum,False,327,Count of Range Sum,3,区间和的个数,327
+power-of-three,False,326,Power of Three,1,3的幂,326
+wiggle-sort-ii,False,324,Wiggle Sort II,2,摆动排序 II,324
+coin-change,False,322,Coin Change,2,零钱兑换,322
+create-maximum-number,False,321,Create Maximum Number,3,拼接最大数,321
+bulb-switcher,False,319,Bulb Switcher,2,灯泡开关,319
+maximum-product-of-word-lengths,False,318,Maximum Product of Word Lengths,2,最大单词长度乘积,318
+remove-duplicate-letters,False,316,Remove Duplicate Letters,3,去除重复字母,316
+count-of-smaller-numbers-after-self,False,315,Count of Smaller Numbers After Self,3,计算右侧小于当前元素的个数,315
+super-ugly-number,False,313,Super Ugly Number,2,超级丑数,313
+burst-balloons,False,312,Burst Balloons,3,戳气球,312
+minimum-height-trees,False,310,Minimum Height Trees,2,最小高度树,310
+best-time-to-buy-and-sell-stock-with-cooldown,False,309,Best Time to Buy and Sell Stock with Cooldown,2,最佳买卖股票时机含冷冻期,309
+range-sum-query-mutable,False,307,Range Sum Query - Mutable,2,区域和检索 - 数组可修改,307
+additive-number,False,306,Additive Number,2,累加数,306
+range-sum-query-2d-immutable,False,304,Range Sum Query 2D - Immutable,2,二维区域和检索 - 矩阵不可变,304
+range-sum-query-immutable,False,303,Range Sum Query - Immutable,1,区域和检索 - 数组不可变,303
+remove-invalid-parentheses,False,301,Remove Invalid Parentheses,3,删除无效的括号,301
+longest-increasing-subsequence,False,300,Longest Increasing Subsequence,2,最长上升子序列,300
+bulls-and-cows,False,299,Bulls and Cows,2,猜数字游戏,299
+serialize-and-deserialize-binary-tree,False,297,Serialize and Deserialize Binary Tree,3,二叉树的序列化与反序列化,297
+find-median-from-data-stream,False,295,Find Median from Data Stream,3,数据流的中位数,295
+nim-game,False,292,Nim Game,1,Nim游戏,292
+word-pattern,False,290,Word Pattern,1,单词模式,290
+game-of-life,False,289,Game of Life,2,生命游戏,289
+find-the-duplicate-number,False,287,Find the Duplicate Number,2,寻找重复数,287
+peeking-iterator,False,284,Peeking Iterator,2,顶端迭代器,284
+move-zeroes,False,283,Move Zeroes,1,移动零,283
+expression-add-operators,False,282,Expression Add Operators,3,给表达式添加运算符,282
+perfect-squares,False,279,Perfect Squares,2,完全平方数,279
+first-bad-version,False,278,First Bad Version,1,第一个错误的版本,278
+h-index-ii,False,275,H-Index II,2,H指数 II,275
+h-index,False,274,H-Index,2,H指数,274
+integer-to-english-words,False,273,Integer to English Words,3,整数转换英文表示,273
+missing-number,False,268,Missing Number,1,缺失数字,268
+ugly-number-ii,False,264,Ugly Number II,2,丑数 II,264
+ugly-number,False,263,Ugly Number,1,丑数,263
+trips-and-users,False,262,Trips and Users,3,行程和用户,262
+single-number-iii,False,260,Single Number III,2,只出现一次的数字 III,260
+add-digits,False,258,Add Digits,1,各位相加,258
+binary-tree-paths,False,257,Binary Tree Paths,1,二叉树的所有路径,257
+valid-anagram,False,242,Valid Anagram,1,有效的字母异位词,242
+different-ways-to-add-parentheses,False,241,Different Ways to Add Parentheses,2,为运算表达式设计优先级,241
+search-a-2d-matrix-ii,False,240,Search a 2D Matrix II,2,搜索二维矩阵 II,240
+sliding-window-maximum,False,239,Sliding Window Maximum,3,滑动窗口最大值,239
+product-of-array-except-self,False,238,Product of Array Except Self,2,除自身以外数组的乘积,238
+delete-node-in-a-linked-list,False,237,Delete Node in a Linked List,1,删除链表中的节点,237
+lowest-common-ancestor-of-a-binary-tree,False,236,Lowest Common Ancestor of a Binary Tree,2,二叉树的最近公共祖先,236
+lowest-common-ancestor-of-a-binary-search-tree,False,235,Lowest Common Ancestor of a Binary Search Tree,1,二叉搜索树的最近公共祖先,235
+palindrome-linked-list,False,234,Palindrome Linked List,1,回文链表,234
+number-of-digit-one,False,233,Number of Digit One,3,数字1的个数,233
+implement-queue-using-stacks,False,232,Implement Queue using Stacks,1,用栈实现队列,232
+power-of-two,False,231,Power of Two,1,2的幂,231
+kth-smallest-element-in-a-bst,False,230,Kth Smallest Element in a BST,2,二叉搜索树中第K小的元素,230
+majority-element-ii,False,229,Majority Element II,2,求众数 II,229
+summary-ranges,False,228,Summary Ranges,2,汇总区间,228
+basic-calculator-ii,False,227,Basic Calculator II,2,基本计算器 II,227
+invert-binary-tree,False,226,Invert Binary Tree,1,翻转二叉树,226
+implement-stack-using-queues,False,225,Implement Stack using Queues,1,用队列实现栈,225
+basic-calculator,False,224,Basic Calculator,3,基本计算器,224
+rectangle-area,False,223,Rectangle Area,2,矩形面积,223
+count-complete-tree-nodes,False,222,Count Complete Tree Nodes,2,完全二叉树的节点个数,222
+maximal-square,False,221,Maximal Square,2,最大正方形,221
+contains-duplicate-iii,False,220,Contains Duplicate III,2,存在重复元素 III,220
+contains-duplicate-ii,False,219,Contains Duplicate II,1,存在重复元素 II,219
+the-skyline-problem,False,218,The Skyline Problem,3,天际线问题,218
+contains-duplicate,False,217,Contains Duplicate,1,存在重复元素,217
+combination-sum-iii,False,216,Combination Sum III,2,组合总和 III,216
+kth-largest-element-in-an-array,False,215,Kth Largest Element in an Array,2,数组中的第K个最大元素,215
+shortest-palindrome,False,214,Shortest Palindrome,3,最短回文串,214
+house-robber-ii,False,213,House Robber II,2,打家劫舍 II,213
+word-search-ii,False,212,Word Search II,3,单词搜索 II,212
+add-and-search-word-data-structure-design,False,211,Add and Search Word - Data structure design,2,添加与搜索单词 - 数据结构设计,211
+course-schedule-ii,False,210,Course Schedule II,2,课程表 II,210
+minimum-size-subarray-sum,False,209,Minimum Size Subarray Sum,2,长度最小的子数组,209
+implement-trie-prefix-tree,False,208,Implement Trie (Prefix Tree),2,实现 Trie (前缀树),208
+course-schedule,False,207,Course Schedule,2,课程表,207
+reverse-linked-list,False,206,Reverse Linked List,1,反转链表,206
+isomorphic-strings,False,205,Isomorphic Strings,1,同构字符串,205
+count-primes,False,204,Count Primes,1,计数质数,204
+remove-linked-list-elements,False,203,Remove Linked List Elements,1,删除链表中的节点,203
+happy-number,False,202,Happy Number,1,快乐数,202
+bitwise-and-of-numbers-range,False,201,Bitwise AND of Numbers Range,2,数字范围按位与,201
+number-of-islands,False,200,Number of Islands,2,岛屿的个数,200
+binary-tree-right-side-view,False,199,Binary Tree Right Side View,2,二叉树的右视图,199
+house-robber,False,198,House Robber,1,打家劫舍,198
+rising-temperature,False,197,Rising Temperature,1,上升的温度,197
+delete-duplicate-emails,False,196,Delete Duplicate Emails,1,删除重复的电子邮箱,196
+tenth-line,False,195,Tenth Line,1,第十行,195
+transpose-file,False,194,Transpose File,2,转置文件,194
+valid-phone-numbers,False,193,Valid Phone Numbers,1,有效电话号码,193
+word-frequency,False,192,Word Frequency,2,统计词频,192
+number-of-1-bits,False,191,Number of 1 Bits,1,位1的个数,191
+reverse-bits,False,190,Reverse Bits,1,颠倒二进制位,190
+rotate-array,False,189,Rotate Array,1,旋转数组,189
+best-time-to-buy-and-sell-stock-iv,False,188,Best Time to Buy and Sell Stock IV,3,买卖股票的最佳时机 IV,188
+repeated-dna-sequences,False,187,Repeated DNA Sequences,2,重复的DNA序列,187
+department-top-three-salaries,False,185,Department Top Three Salaries,3,部门工资前三高的员工,185
+department-highest-salary,False,184,Department Highest Salary,2,部门工资最高的员工,184
+customers-who-never-order,False,183,Customers Who Never Order,1,从不订购的客户,183
+duplicate-emails,False,182,Duplicate Emails,1,查找重复的电子邮箱,182
+employees-earning-more-than-their-managers,False,181,Employees Earning More Than Their Managers,1,超过经理收入的员工,181
+consecutive-numbers,False,180,Consecutive Numbers,2,连续出现的数字,180
+largest-number,False,179,Largest Number,2,最大数,179
+rank-scores,False,178,Rank Scores,2,分数排名,178
+nth-highest-salary,False,177,Nth Highest Salary,2,第N高的薪水,177
+second-highest-salary,False,176,Second Highest Salary,1,第二高的薪水,176
+combine-two-tables,False,175,Combine Two Tables,1,组合两个表,175
+dungeon-game,False,174,Dungeon Game,3,地下城游戏,174
+binary-search-tree-iterator,False,173,Binary Search Tree Iterator,2,二叉搜索树迭代器,173
+factorial-trailing-zeroes,False,172,Factorial Trailing Zeroes,1,阶乘后的零,172
+excel-sheet-column-number,False,171,Excel Sheet Column Number,1,Excel表列序号,171
+majority-element,False,169,Majority Element,1,求众数,169
+excel-sheet-column-title,False,168,Excel Sheet Column Title,1,Excel表列名称,168
+two-sum-ii-input-array-is-sorted,False,167,Two Sum II - Input array is sorted,1,两数之和 II - 输入有序数组,167
+fraction-to-recurring-decimal,False,166,Fraction to Recurring Decimal,2,分数到小数,166
+compare-version-numbers,False,165,Compare Version Numbers,2,比较版本号,165
+maximum-gap,False,164,Maximum Gap,3,最大间距,164
+find-peak-element,False,162,Find Peak Element,2,寻找峰值,162
+intersection-of-two-linked-lists,False,160,Intersection of Two Linked Lists,1,相交链表,160
+min-stack,False,155,Min Stack,1,最小栈,155
+find-minimum-in-rotated-sorted-array-ii,False,154,Find Minimum in Rotated Sorted Array II,3,寻找旋转排序数组中的最小值 II,154
+find-minimum-in-rotated-sorted-array,False,153,Find Minimum in Rotated Sorted Array,2,寻找旋转排序数组中的最小值,153
+maximum-product-subarray,False,152,Maximum Product Subarray,2,乘积最大子序列,152
+reverse-words-in-a-string,False,151,Reverse Words in a String,2,翻转字符串里的单词,151
+evaluate-reverse-polish-notation,False,150,Evaluate Reverse Polish Notation,2,逆波兰表达式求值,150
+max-points-on-a-line,False,149,Max Points on a Line,3,直线上最多的点数,149
+sort-list,False,148,Sort List,2,排序链表,148
+insertion-sort-list,False,147,Insertion Sort List,2,对链表进行插入排序,147
+lru-cache,False,146,LRU Cache,3,LRU缓存机制,146
+binary-tree-postorder-traversal,False,145,Binary Tree Postorder Traversal,3,二叉树的后序遍历,145
+binary-tree-preorder-traversal,False,144,Binary Tree Preorder Traversal,2,二叉树的前序遍历,144
+reorder-list,False,143,Reorder List,2,重排链表,143
+linked-list-cycle-ii,False,142,Linked List Cycle II,2,环形链表 II,142
+linked-list-cycle,False,141,Linked List Cycle,1,环形链表,141
+word-break-ii,False,140,Word Break II,3,单词拆分 II,140
+word-break,False,139,Word Break,2,单词拆分,139
+copy-list-with-random-pointer,False,138,Copy List with Random Pointer,2,复制带随机指针的链表,138
+single-number-ii,False,137,Single Number II,2,只出现一次的数字 II,137
+single-number,False,136,Single Number,1,只出现一次的数字,136
+candy,False,135,Candy,3,分发糖果,135
+gas-station,False,134,Gas Station,2,加油站,134
+clone-graph,False,133,Clone Graph,2,克隆图,133
+palindrome-partitioning-ii,False,132,Palindrome Partitioning II,3,分割回文串 II,132
+palindrome-partitioning,False,131,Palindrome Partitioning,2,分割回文串,131
+surrounded-regions,False,130,Surrounded Regions,2,被围绕的区域,130
+sum-root-to-leaf-numbers,False,129,Sum Root to Leaf Numbers,2,求根到叶子节点数字之和,129
+longest-consecutive-sequence,False,128,Longest Consecutive Sequence,3,最长连续序列,128
+word-ladder,False,127,Word Ladder,2,单词接龙,127
+word-ladder-ii,False,126,Word Ladder II,3,单词接龙 II,126
+valid-palindrome,False,125,Valid Palindrome,1,验证回文串,125
+binary-tree-maximum-path-sum,False,124,Binary Tree Maximum Path Sum,3,二叉树中的最大路径和,124
+best-time-to-buy-and-sell-stock-iii,False,123,Best Time to Buy and Sell Stock III,3,买卖股票的最佳时机 III,123
+best-time-to-buy-and-sell-stock-ii,False,122,Best Time to Buy and Sell Stock II,1,买卖股票的最佳时机 II,122
+best-time-to-buy-and-sell-stock,False,121,Best Time to Buy and Sell Stock,1,买卖股票的最佳时机,121
+triangle,False,120,Triangle,2,三角形最小路径和,120
+pascals-triangle-ii,False,119,Pascal's Triangle II,1,杨辉三角 II,119
+pascals-triangle,False,118,Pascal's Triangle,1,杨辉三角,118
+populating-next-right-pointers-in-each-node-ii,False,117,Populating Next Right Pointers in Each Node II,2,填充同一层的兄弟节点 II,117
+populating-next-right-pointers-in-each-node,False,116,Populating Next Right Pointers in Each Node,2,填充同一层的兄弟节点,116
+distinct-subsequences,False,115,Distinct Subsequences,3,不同的子序列,115
+flatten-binary-tree-to-linked-list,False,114,Flatten Binary Tree to Linked List,2,二叉树展开为链表,114
+path-sum-ii,False,113,Path Sum II,2,路径总和 II,113
+path-sum,False,112,Path Sum,1,路径总和,112
+minimum-depth-of-binary-tree,False,111,Minimum Depth of Binary Tree,1,二叉树的最小深度,111
+balanced-binary-tree,False,110,Balanced Binary Tree,1,平衡二叉树,110
+convert-sorted-list-to-binary-search-tree,False,109,Convert Sorted List to Binary Search Tree,2,有序链表转换二叉搜索树,109
+convert-sorted-array-to-binary-search-tree,False,108,Convert Sorted Array to Binary Search Tree,1,将有序数组转换为二叉搜索树,108
+binary-tree-level-order-traversal-ii,False,107,Binary Tree Level Order Traversal II,1,二叉树的层次遍历 II,107
+construct-binary-tree-from-inorder-and-postorder-traversal,False,106,Construct Binary Tree from Inorder and Postorder Traversal,2,从中序与后序遍历序列构造二叉树,106
+construct-binary-tree-from-preorder-and-inorder-traversal,False,105,Construct Binary Tree from Preorder and Inorder Traversal,2,从前序与中序遍历序列构造二叉树,105
+maximum-depth-of-binary-tree,False,104,Maximum Depth of Binary Tree,1,二叉树的最大深度,104
+binary-tree-zigzag-level-order-traversal,False,103,Binary Tree Zigzag Level Order Traversal,2,二叉树的锯齿形层次遍历,103
+binary-tree-level-order-traversal,False,102,Binary Tree Level Order Traversal,2,二叉树的层次遍历,102
+symmetric-tree,False,101,Symmetric Tree,1,对称二叉树,101
+same-tree,False,100,Same Tree,1,相同的树,100
+recover-binary-search-tree,False,99,Recover Binary Search Tree,3,恢复二叉搜索树,99
+validate-binary-search-tree,False,98,Validate Binary Search Tree,2,验证二叉搜索树,98
+interleaving-string,False,97,Interleaving String,3,交错字符串,97
+unique-binary-search-trees,False,96,Unique Binary Search Trees,2,不同的二叉搜索树,96
+unique-binary-search-trees-ii,False,95,Unique Binary Search Trees II,2,不同的二叉搜索树 II,95
+binary-tree-inorder-traversal,False,94,Binary Tree Inorder Traversal,2,二叉树的中序遍历,94
+restore-ip-addresses,False,93,Restore IP Addresses,2,复原IP地址,93
+reverse-linked-list-ii,False,92,Reverse Linked List II,2,反转链表 II,92
+decode-ways,False,91,Decode Ways,2,解码方法,91
+subsets-ii,False,90,Subsets II,2,子集 II,90
+gray-code,False,89,Gray Code,2,格雷编码,89
+merge-sorted-array,False,88,Merge Sorted Array,1,合并两个有序数组,88
+scramble-string,False,87,Scramble String,3,扰乱字符串,87
+partition-list,False,86,Partition List,2,分隔链表,86
+maximal-rectangle,False,85,Maximal Rectangle,3,最大矩形,85
+largest-rectangle-in-histogram,False,84,Largest Rectangle in Histogram,3,柱状图中最大的矩形,84
+remove-duplicates-from-sorted-list,False,83,Remove Duplicates from Sorted List,1,删除排序链表中的重复元素,83
+remove-duplicates-from-sorted-list-ii,False,82,Remove Duplicates from Sorted List II,2,删除排序链表中的重复元素 II,82
+search-in-rotated-sorted-array-ii,False,81,Search in Rotated Sorted Array II,2,搜索旋转排序数组 II,81
+remove-duplicates-from-sorted-array-ii,False,80,Remove Duplicates from Sorted Array II,2,删除排序数组中的重复项 II,80
+word-search,False,79,Word Search,2,单词搜索,79
+subsets,False,78,Subsets,2,子集,78
+combinations,False,77,Combinations,2,组合,77
+minimum-window-substring,False,76,Minimum Window Substring,3,最小覆盖子串,76
+sort-colors,False,75,Sort Colors,2,分类颜色,75
+search-a-2d-matrix,False,74,Search a 2D Matrix,2,搜索二维矩阵,74
+set-matrix-zeroes,False,73,Set Matrix Zeroes,2,矩阵置零,73
+edit-distance,False,72,Edit Distance,3,编辑距离,72
+simplify-path,False,71,Simplify Path,2,简化路径,71
+climbing-stairs,False,70,Climbing Stairs,1,爬楼梯,70
+sqrtx,False,69,Sqrt(x),1,x 的平方根,69
+text-justification,False,68,Text Justification,3,文本左右对齐,68
+add-binary,False,67,Add Binary,1,二进制求和,67
+plus-one,False,66,Plus One,1,加一,66
+valid-number,False,65,Valid Number,3,有效数字,65
+minimum-path-sum,False,64,Minimum Path Sum,2,最小路径和,64
+unique-paths-ii,False,63,Unique Paths II,2,不同路径 II,63
+unique-paths,False,62,Unique Paths,2,不同路径,62
+rotate-list,False,61,Rotate List,2,旋转链表,61
+permutation-sequence,False,60,Permutation Sequence,2,第k个排列,60
+spiral-matrix-ii,False,59,Spiral Matrix II,2,螺旋矩阵 II,59
+length-of-last-word,False,58,Length of Last Word,1,最后一个单词的长度,58
+insert-interval,False,57,Insert Interval,3,插入区间,57
+merge-intervals,False,56,Merge Intervals,2,合并区间,56
+jump-game,False,55,Jump Game,2,跳跃游戏,55
+spiral-matrix,False,54,Spiral Matrix,2,螺旋矩阵,54
+maximum-subarray,False,53,Maximum Subarray,1,最大子序和,53
+n-queens-ii,False,52,N-Queens II,3,N皇后 II,52
+n-queens,False,51,N-Queens,3,N皇后,51
+powx-n,False,50,"Pow(x, n)",2,"Pow(x, n)",50
+group-anagrams,False,49,Group Anagrams,2,字母异位词分组,49
+rotate-image,False,48,Rotate Image,2,旋转图像,48
+permutations-ii,False,47,Permutations II,2,全排列 II,47
+permutations,False,46,Permutations,2,全排列,46
+jump-game-ii,False,45,Jump Game II,3,跳跃游戏 II,45
+wildcard-matching,False,44,Wildcard Matching,3,通配符匹配,44
+multiply-strings,False,43,Multiply Strings,2,字符串相乘,43
+trapping-rain-water,False,42,Trapping Rain Water,3,接雨水,42
+first-missing-positive,False,41,First Missing Positive,3,缺失的第一个正数,41
+combination-sum-ii,False,40,Combination Sum II,2,组合总和 II,40
+combination-sum,False,39,Combination Sum,2,组合总和,39
+count-and-say,False,38,Count and Say,1,报数,38
+sudoku-solver,False,37,Sudoku Solver,3,解数独,37
+valid-sudoku,False,36,Valid Sudoku,2,有效的数独,36
+search-insert-position,False,35,Search Insert Position,1,搜索插入位置,35
+search-for-a-range,False,34,Search for a Range,2,搜索范围,34
+search-in-rotated-sorted-array,False,33,Search in Rotated Sorted Array,2,搜索旋转排序数组,33
+longest-valid-parentheses,False,32,Longest Valid Parentheses,3,最长有效括号,32
+next-permutation,False,31,Next Permutation,2,下一个排列,31
+substring-with-concatenation-of-all-words,False,30,Substring with Concatenation of All Words,3,与所有单词相关联的字串,30
+divide-two-integers,False,29,Divide Two Integers,2,两数相除,29
+implement-strstr,False,28,Implement strStr(),1,实现strStr(),28
+remove-element,False,27,Remove Element,1,移除元素,27
+remove-duplicates-from-sorted-array,False,26,Remove Duplicates from Sorted Array,1,删除排序数组中的重复项,26
+reverse-nodes-in-k-group,False,25,Reverse Nodes in k-Group,3,k个一组翻转链表,25
+swap-nodes-in-pairs,False,24,Swap Nodes in Pairs,2,两两交换链表中的节点,24
+merge-k-sorted-lists,False,23,Merge k Sorted Lists,3,合并K个排序链表,23
+generate-parentheses,False,22,Generate Parentheses,2,括号生成,22
+merge-two-sorted-lists,False,21,Merge Two Sorted Lists,1,合并两个有序链表,21
+valid-parentheses,False,20,Valid Parentheses,1,有效的括号,20
+remove-nth-node-from-end-of-list,False,19,Remove Nth Node From End of List,2,删除链表的倒数第N个节点,19
+4sum,False,18,4Sum,2,四数之和,18
+letter-combinations-of-a-phone-number,False,17,Letter Combinations of a Phone Number,2,电话号码的字母组合,17
+3sum-closest,False,16,3Sum Closest,2,最接近的三数之和,16
+3sum,False,15,3Sum,2,三数之和,15
+longest-common-prefix,False,14,Longest Common Prefix,1,最长公共前缀,14
+roman-to-integer,False,13,Roman to Integer,1,罗马数字转整数,13
+integer-to-roman,False,12,Integer to Roman,2,整数转罗马数字,12
+container-with-most-water,False,11,Container With Most Water,2,盛最多水的容器,11
+regular-expression-matching,False,10,Regular Expression Matching,3,正则表达式匹配,10
+palindrome-number,False,9,Palindrome Number,1,回文数,9
+string-to-integer-atoi,False,8,String to Integer (atoi),2,字符串转整数 (atoi),8
+reverse-integer,False,7,Reverse Integer,1,反转整数,7
+zigzag-conversion,False,6,ZigZag Conversion,2,Z字形变换,6
+longest-palindromic-substring,False,5,Longest Palindromic Substring,2,最长回文子串,5
+median-of-two-sorted-arrays,False,4,Median of Two Sorted Arrays,3,两个排序数组的中位数,4
+longest-substring-without-repeating-characters,False,3,Longest Substring Without Repeating Characters,2,无重复字符的最长子串,3
+add-two-numbers,False,2,Add Two Numbers,2,两数相加,2
+two-sum,False,1,Two Sum,1,两数之和,1
